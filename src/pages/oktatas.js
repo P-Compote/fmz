@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Home() {
+export default function Oktatas() {
   return (
     <>
-      <h1>Főoldal</h1>
+      <h1>Oktatás</h1>
     </>
   );
 }
