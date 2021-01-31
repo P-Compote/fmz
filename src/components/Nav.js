@@ -7,8 +7,14 @@ export default function Nav() {
       <ul>
         <li>
           <Link to="/">Főoldal</Link>
+        </li>
+        <li>
           <Link to="/fesztivalok">Fesztiválok</Link>
+        </li>
+        <li>
           <Link to="/zenekarok">Zenekarok</Link>
+        </li>
+        <li>
           <Link to="/oktatas">Oktatás</Link>
         </li>
       </ul>
