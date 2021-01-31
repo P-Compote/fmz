@@ -1,5 +1,5 @@
-import React from "react"
+import React from "react";
 
 export default function Home() {
-  return <div>FMZ Főoldal!</div>
+  return <div>FMZ Főoldal!</div>;
 }
