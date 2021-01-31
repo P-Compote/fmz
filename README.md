@@ -5,8 +5,14 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  FMZ Honlap
 </h1>
+
+website:
+[https://hungry-poincare-e0684a.netlify.app](https://hungry-poincare-e0684a.netlify.app)
+
+Deployment status:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bf13ee27-ab47-4d6b-a41b-2e2259247914/deploy-status)](https://app.netlify.com/sites/hungry-poincare-e0684a/deploys)
 
 Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
