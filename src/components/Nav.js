@@ -21,17 +21,13 @@ const NavStyles = styled.nav`
     display: grid;
     place-items: center;
     a[aria-current='page'] {
-      border-bottom: 4px solid var(--black);
-      border-radius: 4px;
+      border-bottom: 2px solid var(--black);
+      font-weight: 600;
     }
-  }
-  li {
-    margin-left: 60px;
   }
   a {
     margin: 0 3rem;
     font-size: 3rem;
-    text-transform: uppercase;
   }
 `;
 

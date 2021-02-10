@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import ContainerStyles from '../styles/ContainerStyles';
 import HeroImage from '../assets/images/home_01_res.jpg';
+import fesztivalokImageLink from '../assets/images/home_fesztivalok_res.jpg';
+import zenekarokImageLink from '../assets/images/home_zenekarok_res.jpg';
+import oktatasImageLink from '../assets/images/home_oktatas_res.jpg';
 
 const TextBox = styled.div`
   display: grid;
@@ -12,16 +16,31 @@ const TextBox = styled.div`
   }
 `;
 
+const ImageNavContainer = styled.div`
+  a {
+    img {
+      opacity: 0.7;
+      transition: opacity 0.4s ease;
+    }
+  }
+  a:hover {
+    img {
+      opacity: 1;
+    }
+  }
+`;
+
 export default function Home() {
   return (
     <>
       <div>
         <img
           src={HeroImage}
-          alt="Hero image"
+          alt="Hero"
           style={{ width: '100%', height: '100% ' }}
         />
       </div>
+      <h1>Az egyesületről</h1>
       <ContainerStyles>
         <TextBox>
           <div>
@@ -63,6 +82,32 @@ export default function Home() {
             </p>
           </div>
         </TextBox>
+        <h2>
+          <strong>További információért keressen minket:</strong>
+        </h2>
+        <h2>
+          <a href="mailto:hello@fmz.world" target="_blank" rel="noreferrer">
+            hello@fmz.world
+          </a>
+        </h2>
+        <h1>Egyesületünk fő tevékenységei</h1>
+        <ImageNavContainer>
+          <div>
+            <Link to="/fesztivalok">
+              <img src={fesztivalokImageLink} alt="fesztiválok" />
+            </Link>
+          </div>
+          <div>
+            <Link to="/zenekarok">
+              <img src={zenekarokImageLink} alt="zenekarok" />
+            </Link>
+          </div>
+          <div>
+            <Link to="/oktatas">
+              <img src={oktatasImageLink} alt="oktatás" />
+            </Link>
+          </div>
+        </ImageNavContainer>
       </ContainerStyles>
     </>
   );
