@@ -7,6 +7,7 @@ const GlobalStyles = createGlobalStyle`
     --yellow: #ffc600;
     --white: #fff;
     --grey: #efefef;
+    --blue: #2980b9;
     --container: 1080px;
   }
   
@@ -18,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-size: 2rem;
+    line-height: 1.8;
   }
 
   /* .gatsby-image-wrapper img[src*=base64\\,] {
@@ -33,6 +35,9 @@ const GlobalStyles = createGlobalStyle`
     transform: rotate(-2deg);
     position: relative;
     display: inline-block;
+  }
+  .center {
+    text-align: center;
   }
 `;
 

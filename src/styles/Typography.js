@@ -9,16 +9,32 @@ const Typography = createGlobalStyle`
 
   h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
-    margin: 0;
   }
 
   h1 {
     font-size: 5rem;
+    text-align: center;
+    letter-spacing: 1px;
   }
+
+  h2 {
+  font-size: 2.2rem;
+  text-align: center;
+}
 
   a {
     color: var(--black);
     text-decoration: none;
+  }
+
+  a[href^="mailto:"] {
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  a[href^="mailto:"]:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
   }
 `;
 
