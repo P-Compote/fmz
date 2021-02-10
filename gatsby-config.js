@@ -6,5 +6,14 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-styled-components`],
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Alegreya\:300,400,400i,700`],
+        display: 'swap',
+      },
+    },
+  ],
 };
