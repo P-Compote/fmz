@@ -109,29 +109,29 @@ export const query = graphql`
   query {
     hero: file(relativePath: { eq: "home_01_res.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 2000, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     feszt: file(relativePath: { eq: "home_fesztivalok_res.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1200, quality: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     zenekar: file(relativePath: { eq: "home_zenekarok_res.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1200, quality: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     oktatas: file(relativePath: { eq: "home_oktatas_res.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1200, quality: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
