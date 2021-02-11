@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import ContainerStyles from '../styles/ContainerStyles';
 
-const TextBox = styled.div`
+export const TextBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10rem;
