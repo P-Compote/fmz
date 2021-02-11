@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--white);
     background-size: 450px;
     background-attachment: fixed;
+    overflow-y: scroll;
   }
 
   body {
