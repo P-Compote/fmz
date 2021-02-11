@@ -15,26 +15,31 @@ export default function Zenekarok({ data }) {
         <TextBox>
           <div>
             <p>
-              A Fiatalok a Magyar Zenéért Egyesület egy 2011-ben alapított
-              önkéntes fiatalokból álló alkotóközösség, melynek víziója a
-              Kárpát-medencei néphagyományok megismertetése a fiatalabb
-              generációval. Az egyesületünk tíz éve segíti a hazai világ- és
-              népzenei zenekarok szakmai és üzleti fejlődését. Az alapításunk
-              óta több mint 30 nemzetközi turnét bonyolítottunk már le és számos
-              világzenei kiadóval és érdekképviselettel vagyunk állandó
-              kapcsolatban Ázsia, Amerika és Európa országaiban.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Adipiscing elit duis tristique sollicitudin. A iaculis at erat
+              pellentesque adipiscing commodo elit at. Cursus sit amet dictum
+              sit amet justo donec. Sodales ut eu sem integer vitae. At varius
+              vel pharetra vel turpis nunc eget lorem dolor. Felis eget nunc
+              lobortis mattis aliquam faucibus purus. Donec ultrices tincidunt
+              arcu non sodales. Arcu odio ut sem nulla pharetra diam. Dolor
+              magna eget est lorem ipsum dolor sit amet consectetur. Eget nullam
+              non nisi est sit amet facilisis magna. Mi quis hendrerit dolor
+              magna eget. Ac tortor dignissim convallis aenean et tortor at
+              risus viverra. Quis viverra nibh cras pulvinar mattis nunc.
             </p>
           </div>
           <div>
             <p>
-              2018-ban alapítottuk a Bobájka Bölcsit, melynek célja a gyermekek
-              számára a családias légkör mellett olyan plusz élményekkel
-              szolgálni, melyek emlékezetessé teszik mindennapjaikat, és a
-              játszva tanulás mellett támogatják érzelmi intelligenciájuk,
-              beszédfejlődésük és biztonságérzetük kialakulását. Zenei nevelés,
-              kutyaterápiás foglalkozás, népi hagyományok ismertetése, megőrzése
-              valamint az alapvető környezetvédelmi ismeretek elsajátításának
-              támogatása.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non
+              diam phasellus vestibulum lorem. Senectus et netus et malesuada.
+              Mauris a diam maecenas sed enim ut sem. Netus et malesuada fames
+              ac turpis egestas integer. Tincidunt augue interdum velit euismod
+              in pellentesque massa placerat duis. Mauris cursus mattis molestie
+              a iaculis at erat. Neque egestas congue quisque egestas diam in
+              arcu cursus. Pretium lectus quam id leo in. Risus ultricies
+              tristique nulla aliquet enim tortor at. Auctor eu augue ut lectus.
             </p>
           </div>
         </TextBox>

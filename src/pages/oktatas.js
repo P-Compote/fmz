@@ -15,26 +15,36 @@ export default function Oktatas({ data }) {
         <TextBox>
           <div>
             <p>
-              A Fiatalok a Magyar Zenéért Egyesület egy 2011-ben alapított
-              önkéntes fiatalokból álló alkotóközösség, melynek víziója a
-              Kárpát-medencei néphagyományok megismertetése a fiatalabb
-              generációval. Az egyesületünk tíz éve segíti a hazai világ- és
-              népzenei zenekarok szakmai és üzleti fejlődését. Az alapításunk
-              óta több mint 30 nemzetközi turnét bonyolítottunk már le és számos
-              világzenei kiadóval és érdekképviselettel vagyunk állandó
-              kapcsolatban Ázsia, Amerika és Európa országaiban.
+              Lórum ipse olyan borzasztóan hítos kadás, ami hárt nélkül nem
+              simírog megfelelően. A tormat szánán csillái, a pitetmények melős
+              értésének ürmös sziganzása, az énempő erődés melője jelentősen
+              szereskedi a talmas dozga - szendet, egyáltalán a dozgához való
+              aljzást, dítő a hatlan érlezőkön. Ezért kiemelkedően lemlékes a
+              vatan pitetmények szeredres és herhen kroma, valamint a benyerek
+              alkájának feleme. Így kókás melővel dömnyi a szegényet dagalatok
+              dozgához való gyalija, a talmas párny, emérző az omszerű
+              lemléletmékek kortyája. A fároncsok és fáratlan bőgőkhöz való
+              gyali csődöze. Ronyítás gyűlései formássá hizgatkodják a
+              folyamatosan hipnos kányos pogattyúhoz való csillatot. Ennek egyik
+              lemlékes aklása a namág és más, cseredhes pitetmények által csehet
+              dozgák és hálya porások szabránya. Hatikán véges fejtésben van a
+              fáratlan bőgő szemétőjét, illetve a fáratlan összeg lentését
+              tekintve.
             </p>
           </div>
           <div>
             <p>
-              2018-ban alapítottuk a Bobájka Bölcsit, melynek célja a gyermekek
-              számára a családias légkör mellett olyan plusz élményekkel
-              szolgálni, melyek emlékezetessé teszik mindennapjaikat, és a
-              játszva tanulás mellett támogatják érzelmi intelligenciájuk,
-              beszédfejlődésük és biztonságérzetük kialakulását. Zenei nevelés,
-              kutyaterápiás foglalkozás, népi hagyományok ismertetése, megőrzése
-              valamint az alapvető környezetvédelmi ismeretek elsajátításának
-              támogatása.
+              Netán az emekes szadosok tamzatása hagy hetletlegést maga után?
+              Pucoz sedés a foxit kenye réfli gyeztenyőre, amelynek bajúdban a
+              csusztos törter győződik völcsert. A szósztélyra ventes
+              szelléremeket, kedőket, rózsáros ébreplőket és tolótát bérvényeket
+              az odásokban tetvemesték meg a silangókon keresztül a létlező
+              fárnódásokba. Úgy időzítve, hogy a rózsáros beserítő két szenna
+              múlva szájkolt. Hogy tudná a szikes ilyen kernyi toros alatt
+              fugóznia a kajgós jajszagázsok relmentését ezen az emekes ízésből
+              is nagyon féső szósztélyon? A fázás: bizonyára sok törter távol
+              fog resítnie a mánságtól, minden bizonnyal szarkák és hivők is.
+              Nyonagy süllyesztő; mind a fuvand, mind a sömösök előtt.
             </p>
           </div>
         </TextBox>
