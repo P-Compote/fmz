@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import ContainerStyles from '../styles/ContainerStyles';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import ContainerStyles from '../styles/ContainerStyles';
 
 const TextBox = styled.div`
   display: grid;
@@ -109,28 +109,28 @@ export const query = graphql`
   query {
     hero: file(relativePath: { eq: "home_01_res.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     feszt: file(relativePath: { eq: "home_fesztivalok_res.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 1200, quality: 70) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     zenekar: file(relativePath: { eq: "home_zenekarok_res.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 1200, quality: 70) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     oktatas: file(relativePath: { eq: "home_oktatas_res.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 1200, quality: 70) {
           ...GatsbyImageSharpFluid
         }
       }

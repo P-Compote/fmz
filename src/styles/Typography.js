@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
+import font from '../assets/fonts/Zimra-Regular.otf';
+
 const Typography = createGlobalStyle`
+  @font-face {
+    font-family: ZimraRegular;
+    src: url(${font});
+  }
+
   html {
     font-family: Alegreya, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);
