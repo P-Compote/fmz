@@ -2,10 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import ContainerStyles from '../styles/ContainerStyles';
-import HeroImage from '../assets/images/home_01_res.jpg';
-import fesztivalokImageLink from '../assets/images/home_fesztivalok_res.jpg';
-import zenekarokImageLink from '../assets/images/home_zenekarok_res.jpg';
-import oktatasImageLink from '../assets/images/home_oktatas_res.jpg';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 const TextBox = styled.div`
   display: grid;
@@ -17,11 +15,9 @@ const TextBox = styled.div`
 `;
 
 const ImageNavContainer = styled.div`
-  a {
-    img {
-      opacity: 0.7;
-      transition: opacity 0.4s ease;
-    }
+  img {
+    opacity: 0.7;
+    transition: opacity 0.4s ease;
   }
   a:hover {
     img {
@@ -30,15 +26,11 @@ const ImageNavContainer = styled.div`
   }
 `;
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <div>
-        <img
-          src={HeroImage}
-          alt="Hero"
-          style={{ width: '100%', height: '100% ' }}
-        />
+        <Img fluid={data.hero.childImageSharp.fluid} />
       </div>
       <h1>Az egyesületről</h1>
       <ContainerStyles>
@@ -94,17 +86,17 @@ export default function Home() {
         <ImageNavContainer>
           <div>
             <Link to="/fesztivalok">
-              <img src={fesztivalokImageLink} alt="fesztiválok" />
+              <Img fluid={data.feszt.childImageSharp.fluid} alt="fesztiválok" />
             </Link>
           </div>
           <div>
             <Link to="/zenekarok">
-              <img src={zenekarokImageLink} alt="zenekarok" />
+              <Img fluid={data.zenekar.childImageSharp.fluid} alt="zenekarok" />
             </Link>
           </div>
           <div>
             <Link to="/oktatas">
-              <img src={oktatasImageLink} alt="oktatás" />
+              <Img fluid={data.oktatas.childImageSharp.fluid} alt="oktatás" />
             </Link>
           </div>
         </ImageNavContainer>
@@ -112,3 +104,36 @@ export default function Home() {
     </>
   );
 }
+
+export const query = graphql`
+  query {
+    hero: file(relativePath: { eq: "home_01_res.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    feszt: file(relativePath: { eq: "home_fesztivalok_res.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    zenekar: file(relativePath: { eq: "home_zenekarok_res.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    oktatas: file(relativePath: { eq: "home_oktatas_res.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

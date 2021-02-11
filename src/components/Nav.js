@@ -22,7 +22,6 @@ const NavStyles = styled.nav`
     place-items: center;
     a[aria-current='page'] {
       border-bottom: 2px solid var(--black);
-      font-weight: 600;
     }
   }
   a {
