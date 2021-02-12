@@ -15,31 +15,34 @@ export default function Zenekarok({ data }) {
         <TextBox>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Adipiscing elit duis tristique sollicitudin. A iaculis at erat
-              pellentesque adipiscing commodo elit at. Cursus sit amet dictum
-              sit amet justo donec. Sodales ut eu sem integer vitae. At varius
-              vel pharetra vel turpis nunc eget lorem dolor. Felis eget nunc
-              lobortis mattis aliquam faucibus purus. Donec ultrices tincidunt
-              arcu non sodales. Arcu odio ut sem nulla pharetra diam. Dolor
-              magna eget est lorem ipsum dolor sit amet consectetur. Eget nullam
-              non nisi est sit amet facilisis magna. Mi quis hendrerit dolor
-              magna eget. Ac tortor dignissim convallis aenean et tortor at
-              risus viverra. Quis viverra nibh cras pulvinar mattis nunc.
+              A rendezvényeink mellett fontosnak tartjuk az kiemelkedő minőséget
+              képviselő, népzenei hagyományokból merítkező zenekarok támogatását
+              is. A magyar zene iránti szenvedélyünk, valamint több éves
+              nemzetközi tapasztalatunk arra ösztönöz minket, hogy segítsünk
+              hazánk feltörekvő világzenei művészeit.
+            </p>
+            <p>
+              Az egyesületünk tagjai művészként és menedzserként tudják, hogy
+              lehet a „másik oldalon” lenni. Aktív zenészként teljesen megértjük
+              milyen nehéz lehet egy alkotónak nemcsak a zenéjére koncentrálni,
+              hanem naprakésznek maradnia a legújabb digitális trendekkel, jogi,
+              közgazdasági teendőkkel is.
             </p>
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non
-              diam phasellus vestibulum lorem. Senectus et netus et malesuada.
-              Mauris a diam maecenas sed enim ut sem. Netus et malesuada fames
-              ac turpis egestas integer. Tincidunt augue interdum velit euismod
-              in pellentesque massa placerat duis. Mauris cursus mattis molestie
-              a iaculis at erat. Neque egestas congue quisque egestas diam in
-              arcu cursus. Pretium lectus quam id leo in. Risus ultricies
-              tristique nulla aliquet enim tortor at. Auctor eu augue ut lectus.
+              Ezért alapítottuk a Gallus &amp; Hirdundo menedzsment irodát,
+              amely extra kezet nyújt az általunk képviselt zenekarok számára.
+              Megosztjuk a tapasztalatainkat, segítjük egymást a zenekar körüli
+              tevékenységekben, valamint egy olyan világzenei kollektívát
+              alkotunk, amely méltón képviselheti a magyar világzenét a bolygónk
+              bármelyik fesztiváljának nagyszínpadán.
+            </p>
+            <p>
+              Az elismert művészektől a feltörekvő tehetségekig, egyesületünk
+              által képviselt zenekarok egytől-egyig kiemelkedő minőséggel
+              dolgozzák fel a Kárpát-medence népzenei hagyományait, elősegítve
+              az örökségünk becsatornázását a modern zenei közegbe.
             </p>
           </div>
         </TextBox>

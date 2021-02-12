@@ -15,40 +15,35 @@ export default function Fesztivalok({ data }) {
         <TextBox>
           <div>
             <p>
-              A Fiatalok a Magyar Zenéért Egyesület egy 2011-ben alapított
-              önkéntes fiatalokból álló alkotóközösség, melynek víziója a
-              Kárpát-medencei néphagyományok megismertetése a fiatalabb
-              generációval. Az egyesületünk tíz éve segíti a hazai világ- és
-              népzenei zenekarok szakmai és üzleti fejlődését. Az alapításunk
-              óta több mint 30 nemzetközi turnét bonyolítottunk már le és számos
-              világzenei kiadóval és érdekképviselettel vagyunk állandó
-              kapcsolatban Ázsia, Amerika és Európa országaiban.
+              Az egyesületünk 2014-ben indította el az Ubik fesztiválsorozatot,
+              amelynek célja egy dinamikusan fejlődő, innovatív és nemzetközi
+              összművészeti fesztivál megteremtése, amely elősegíti a különböző
+              művészeti ágak és az országokon átívelő kultúrák együttműködését.
+              Rendezvényeinken a családias közeg megteremtésével, kizárólag
+              önkéntesekből álló építő és művészbrigáddal valamint az egyedi
+              történetmeséléssel szeretnénk különlegesek lenni.
             </p>
             <p>
-              A nemzetközi sikerek mellett törekszünk a tapasztalataink helyi
-              promótálására is, átadva tudásunkat a következő generációknak
-              összművészeti fesztiválok keretében. Az idén ötödik alkalommal
-              megrendezett UbikEklektik fesztiválunk megkapta a Minősített
-              Fesztivál kitüntetést. A rendezvényeink programja az akusztikus
-              népzene, népi hagyományok ápolására, ezek modernizálására alapul.
+              Nálunk mindenki otthon érezheti magát, kipróbálhatja valamennyi
+              művészet munkafolyamatait és életre szóló kapcsolatokat teremthet
+              egy a nemzetközi, kreatív közegben.
             </p>
           </div>
           <div>
             <p>
-              2018-ban alapítottuk a Bobájka Bölcsit, melynek célja a gyermekek
-              számára a családias légkör mellett olyan plusz élményekkel
-              szolgálni, melyek emlékezetessé teszik mindennapjaikat, és a
-              játszva tanulás mellett támogatják érzelmi intelligenciájuk,
-              beszédfejlődésük és biztonságérzetük kialakulását. Zenei nevelés,
-              kutyaterápiás foglalkozás, népi hagyományok ismertetése, megőrzése
-              valamint az alapvető környezetvédelmi ismeretek elsajátításának
-              támogatása.
+              Céljuk a fiatal feltörekvő alkotók közötti szakmai kapcsolat
+              megteremtése, közösségé formálása és munkáik bemutatása a
+              közönségnek.
             </p>
             <p>
-              Egyesületünk küldetése, hogy a fiatal lakosság ismerje meg saját
-              néphagyományait és legyen aktív tagja a hagyományőrzésnek, annak
-              feldolgozásának. Célunk a helyi tehetséggondozás és a kezdő
-              kezdeményezések becsatornázása a magyarországi zenei közegbe.
+              Az Ubik univerzumnak egy évről évre változó sci-fi kerettörténet
+              adja meg a vázát. Mondavilágunk szerint az Ubik időpontja egy
+              párhuzamos valóságokban létrejövő együttállás, ahol a különböző
+              szubkultúrák összefonódnak. Mindegyik rendezvénysorozatnak megvan
+              a saját üzenete, törzsei, évről-évre változó küldetése. Ez
+              biztosítja a fesztiválok egyediségét, valamint a minden évben
+              változó, de adott évben egységes koncepció összefogja a sokszor
+              teljesen különböző művészeti alkotások kavalkádját.
             </p>
           </div>
         </TextBox>
@@ -56,8 +51,8 @@ export default function Fesztivalok({ data }) {
           <strong>További információért keressen minket:</strong>
         </h2>
         <h2>
-          <a href="mailto:festival@fmz.world" target="_blank" rel="noreferrer">
-            festival@fmz.world
+          <a href="mailto:festival@fmz.ngo" target="_blank" rel="noreferrer">
+            festival@fmz.ngo
           </a>
         </h2>
       </ContainerStyles>

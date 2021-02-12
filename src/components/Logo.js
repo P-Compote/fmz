@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LogoStyles = styled.div`
-  font-family: 'ZimraRegular';
+  /* font-family: 'Poppins'; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;

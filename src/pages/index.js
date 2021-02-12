@@ -49,10 +49,10 @@ export default function Home({ data }) {
             <p>
               A nemzetközi sikerek mellett törekszünk a tapasztalataink helyi
               promótálására is, átadva tudásunkat a következő generációknak
-              összművészeti fesztiválok keretében. Az idén ötödik alkalommal
-              megrendezett UbikEklektik fesztiválunk megkapta a Minősített
-              Fesztivál kitüntetést. A rendezvényeink programja az akusztikus
-              népzene, népi hagyományok ápolására, ezek modernizálására alapul.
+              összművészeti fesztiválok keretében. Az UbikEklektik fesztiválunk
+              2017-ben megkapta a Minősített Fesztivál kitüntetést. Célunk egy
+              találkozási pontot teremteni a különböző művészeti ágakban alkotók
+              között.
             </p>
           </div>
           <div>
@@ -78,8 +78,8 @@ export default function Home({ data }) {
           <strong>További információért keressen minket:</strong>
         </h2>
         <h2>
-          <a href="mailto:hello@fmz.world" target="_blank" rel="noreferrer">
-            hello@fmz.world
+          <a href="mailto:hello@fmz.ngo" target="_blank" rel="noreferrer">
+            hello@fmz.ngo
           </a>
         </h2>
         <h1>Egyesületünk fő tevékenységei</h1>
