@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import ContainerStyles from '../styles/ContainerStyles';
+import { clearConfigCache } from 'prettier';
 
 export const TextBox = styled.div`
   display: grid;
@@ -22,6 +23,41 @@ const ImageNavContainer = styled.div`
   a:hover {
     img {
       opacity: 1;
+    }
+  }
+`;
+
+const OverlayText = styled.div`
+  width: 40%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--black);
+  padding: 5px;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+  bottom: 0;
+  left: 30%;
+  z-index: 1000;
+  text-align: center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  transition: all 0.2s ease-in-out;
+`;
+
+const ImageLinkContainer = styled.div`
+  position: relative;
+  picture {
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    picture {
+      opacity: 1;
+    }
+    div {
+      letter-spacing: 1px;
+      background: rgba(255, 255, 255, 1);
     }
   }
 `;
@@ -84,21 +120,24 @@ export default function Home({ data }) {
         </h2>
         <h1>Egyesületünk fő tevékenységei</h1>
         <ImageNavContainer>
-          <div>
+          <ImageLinkContainer>
             <Link to="/fesztivalok">
               <Img fluid={data.feszt.childImageSharp.fluid} alt="fesztiválok" />
+              <OverlayText>Fesztiválok</OverlayText>
             </Link>
-          </div>
-          <div>
+          </ImageLinkContainer>
+          <ImageLinkContainer>
             <Link to="/zenekarok">
               <Img fluid={data.zenekar.childImageSharp.fluid} alt="zenekarok" />
+              <OverlayText>Zenekarok</OverlayText>
             </Link>
-          </div>
-          <div>
+          </ImageLinkContainer>
+          <ImageLinkContainer>
             <Link to="/oktatas">
               <Img fluid={data.oktatas.childImageSharp.fluid} alt="oktatás" />
+              <OverlayText>Oktatás</OverlayText>
             </Link>
-          </div>
+          </ImageLinkContainer>
         </ImageNavContainer>
       </ContainerStyles>
     </>
@@ -107,28 +146,28 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    hero: file(relativePath: { eq: "home_01_res.jpg" }) {
+    hero: file(relativePath: { eq: "FMZ-fejlecArtboard-main.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    feszt: file(relativePath: { eq: "home_fesztivalok_res.jpg" }) {
+    feszt: file(relativePath: { eq: "FMZ-mainpageArtboard-festival.png" }) {
       childImageSharp {
         fluid(maxWidth: 1200, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    zenekar: file(relativePath: { eq: "home_zenekarok_res.jpg" }) {
+    zenekar: file(relativePath: { eq: "FMZ-mainpageArtboard-zenekarok.png" }) {
       childImageSharp {
         fluid(maxWidth: 1200, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    oktatas: file(relativePath: { eq: "home_oktatas_res.jpg" }) {
+    oktatas: file(relativePath: { eq: "FMZ-mainpageArtboard-oktatas.png" }) {
       childImageSharp {
         fluid(maxWidth: 1200, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp

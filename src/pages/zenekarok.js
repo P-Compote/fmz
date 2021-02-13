@@ -74,7 +74,9 @@ export default function Zenekarok({ data }) {
 
 export const query = graphql`
   query {
-    zenekarokHero: file(relativePath: { eq: "zenekarok_01_desktop.jpg" }) {
+    zenekarokHero: file(
+      relativePath: { eq: "FMZ-fejlecArtboard-zenekarok.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp

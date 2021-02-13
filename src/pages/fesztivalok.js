@@ -62,7 +62,9 @@ export default function Fesztivalok({ data }) {
 
 export const query = graphql`
   query {
-    fesztivalokHero: file(relativePath: { eq: "fesztivalok_01_desktop.jpg" }) {
+    fesztivalokHero: file(
+      relativePath: { eq: "FMZ-fejlecArtboard-fesztival.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp

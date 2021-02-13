@@ -58,7 +58,7 @@ export default function Oktatas({ data }) {
 
 export const query = graphql`
   query {
-    oktatasHero: file(relativePath: { eq: "oktatas_01_desktop.jpg" }) {
+    oktatasHero: file(relativePath: { eq: "FMZ-fejlecArtboard-oktatas.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
