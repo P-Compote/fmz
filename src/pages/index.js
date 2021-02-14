@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import ContainerStyles from '../styles/ContainerStyles';
 
@@ -14,19 +13,7 @@ export const TextBox = styled.div`
   }
 `;
 
-const ImageNavContainer = styled.div`
-  img {
-    opacity: 0.7;
-    transition: opacity 0.4s ease;
-  }
-  a:hover {
-    img {
-      opacity: 1;
-    }
-  }
-`;
-
-const OverlayText = styled.div`
+export const OverlayText = styled.div`
   width: 40%;
   position: absolute;
   background: rgba(255, 255, 255, 0.6);
@@ -44,7 +31,7 @@ const OverlayText = styled.div`
   transition: all 0.2s ease-in-out;
 `;
 
-const ImageLinkContainer = styled.div`
+export const ImageLinkContainer = styled.div`
   position: relative;
   picture {
     opacity: 0.7;
@@ -54,6 +41,7 @@ const ImageLinkContainer = styled.div`
     transition: all 0.3s ease-in-out;
   }
   &:hover {
+    cursor: pointer;
     picture {
       /* img {
         filter: grayscale(0%);
@@ -124,9 +112,9 @@ export default function Home({ data }) {
           </a>
         </h2>
         <h1>Egyesületünk fő tevékenységei</h1>
-        <ImageNavContainer>
+        <div>
           <ImageLinkContainer>
-            <Link to="/fesztivalok">
+            <Link to="/fesztivalok-alt">
               <Img fluid={data.feszt.childImageSharp.fluid} alt="fesztiválok" />
               <OverlayText>Fesztiválok</OverlayText>
             </Link>
@@ -143,7 +131,7 @@ export default function Home({ data }) {
               <OverlayText>Oktatás</OverlayText>
             </Link>
           </ImageLinkContainer>
-        </ImageNavContainer>
+        </div>
       </ContainerStyles>
     </>
   );
