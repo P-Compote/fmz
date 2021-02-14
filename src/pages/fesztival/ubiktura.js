@@ -1,10 +1,10 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
-import { TextBox } from '../pages/index';
-import ContainerStyles from '../styles/ContainerStyles';
+import { TextBox } from '../index';
+import ContainerStyles from '../../styles/ContainerStyles';
 
-export default function UbikTura() {
+export default function Ubikeklektik() {
   const data = useStaticQuery(graphql`
     query {
       ubikTuraLogo: file(relativePath: { eq: "ubiktura-logo.jpg" }) {
@@ -25,14 +25,18 @@ export default function UbikTura() {
       }
     }
   `);
+
   return (
     <>
+      <div>
+        <Img fluid={data.ubikTuraMain.childImageSharp.fluid} alt="UbikTúra" />
+      </div>
       <ContainerStyles>
         <div>
           <Img
             fluid={data.ubikTuraLogo.childImageSharp.fluid}
             alt="ubikTúra"
-            style={{ width: 199, display: 'block', margin: '5rem auto' }}
+            style={{ width: 199, display: 'block', margin: '3rem auto' }}
           />
         </div>
         <h2>
@@ -94,9 +98,6 @@ export default function UbikTura() {
           </div>
         </div>
       </ContainerStyles>
-      <div>
-        <Img fluid={data.ubikTuraMain.childImageSharp.fluid} alt="UbikTúra" />
-      </div>
     </>
   );
 }

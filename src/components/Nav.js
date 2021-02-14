@@ -45,6 +45,9 @@ export default function Nav() {
               <Link to="/fesztivalok">Fesztiválok</Link>
             </li>
             <li>
+              <Link to="/fesztivalok-alt">Fesztiválok2</Link>
+            </li>
+            <li>
               <Link to="/zenekarok">Zenekarok</Link>
             </li>
             <li>

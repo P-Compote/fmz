@@ -1,15 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ContainerStyles from '../styles/ContainerStyles';
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { TextBox, ImageLinkContainer, OverlayText } from './index';
-import UbikTura from '../components/UbikTura';
-import UbikEklektik from '../components/UbikEklektik';
-import UbikFarm from '../components/UbikFarm';
 
-export default function Fesztivalok({ data }) {
-  const [fest, setFest] = useState('ubikeklektik');
-
+export default function FesztivalokAlt({ data }) {
   return (
     <>
       <div>
@@ -65,31 +60,28 @@ export default function Fesztivalok({ data }) {
         </h2>
         <div>
           <ImageLinkContainer>
-            <div onClick={() => setFest('ubikeklektik')} role="button">
+            <Link to="/fesztival/ubikeklektik">
               <Img
                 fluid={data.ubikEklektik.childImageSharp.fluid}
                 alt="ubikEklektik"
               />
               <OverlayText>UbikEklektik</OverlayText>
-            </div>
+            </Link>
           </ImageLinkContainer>
           <ImageLinkContainer>
-            <div onClick={() => setFest('ubiktura')} role="button">
+            <Link to="/fesztival/ubiktura">
               <Img fluid={data.ubikTura.childImageSharp.fluid} alt="ubikTúra" />
               <OverlayText>UbikTūra</OverlayText>
-            </div>
+            </Link>
           </ImageLinkContainer>
           <ImageLinkContainer>
-            <div onClick={() => setFest('ubikfarm')} role="button">
+            <Link to="/fesztival/ubikfarm">
               <Img fluid={data.ubikFarm.childImageSharp.fluid} alt="ubikFarm" />
               <OverlayText>UbikFarm</OverlayText>
-            </div>
+            </Link>
           </ImageLinkContainer>
         </div>
       </ContainerStyles>
-      {fest === 'ubiktura' && <UbikTura />}
-      {fest === 'ubikeklektik' && <UbikEklektik />}
-      {fest === 'ubikfarm' && <UbikFarm />}
     </>
   );
 }

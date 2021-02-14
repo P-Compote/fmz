@@ -1,10 +1,10 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
-import { TextBox } from '../pages/index';
-import ContainerStyles from '../styles/ContainerStyles';
+import { TextBox } from '../index';
+import ContainerStyles from '../../styles/ContainerStyles';
 
-export default function UbikFarm() {
+export default function Ubikfarm() {
   const data = useStaticQuery(graphql`
     query {
       ubikFarmLogo: file(relativePath: { eq: "ubikfarm_logo.jpg" }) {
@@ -27,12 +27,15 @@ export default function UbikFarm() {
   `);
   return (
     <>
+      <div>
+        <Img fluid={data.ubikFarmMain.childImageSharp.fluid} alt="UbikFarm" />
+      </div>
       <ContainerStyles>
         <div>
           <Img
             fluid={data.ubikFarmLogo.childImageSharp.fluid}
             alt="UbikFarm"
-            style={{ width: 199, display: 'block', margin: '5rem auto' }}
+            style={{ width: 199, display: 'block', margin: '3rem auto' }}
           />
         </div>
         <h2>
@@ -90,9 +93,6 @@ export default function UbikFarm() {
           </div>
         </div>
       </ContainerStyles>
-      <div>
-        <Img fluid={data.ubikFarmMain.childImageSharp.fluid} alt="UbikFarm" />
-      </div>
     </>
   );
 }

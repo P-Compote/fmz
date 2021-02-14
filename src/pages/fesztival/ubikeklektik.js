@@ -1,10 +1,10 @@
 import React from 'react';
+import ContainerStyles from '../../styles/ContainerStyles';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
-import { TextBox } from '../pages/index';
-import ContainerStyles from '../styles/ContainerStyles';
+import { TextBox } from '../index';
 
-export default function UbikEklektik() {
+export default function Ubikeklektik() {
   const data = useStaticQuery(graphql`
     query {
       ubikEklektikLogo: file(
@@ -29,12 +29,18 @@ export default function UbikEklektik() {
   `);
   return (
     <>
+      <div>
+        <Img
+          fluid={data.ubikEklektikMain.childImageSharp.fluid}
+          alt="UbikEklektik"
+        />
+      </div>
       <ContainerStyles>
         <div>
           <Img
             fluid={data.ubikEklektikLogo.childImageSharp.fluid}
             alt="ubikEklektik"
-            style={{ width: 250, display: 'block', margin: '5rem auto' }}
+            style={{ width: 250, display: 'block', margin: '2rem auto' }}
           />
         </div>
         <h2>
@@ -66,7 +72,7 @@ export default function UbikEklektik() {
           <strong>További információért keressen minket:</strong>
         </h2>
         <h2>
-          <a href="https://ubikeklektik.com" target="_blank" rel="noreferrer">
+          <a href="ubikeklektik.com" target="_blank" rel="noreferrer">
             ubikeklektik.com
           </a>
         </h2>
@@ -87,12 +93,6 @@ export default function UbikEklektik() {
           </div>
         </div>
       </ContainerStyles>
-      <div>
-        <Img
-          fluid={data.ubikEklektikMain.childImageSharp.fluid}
-          alt="UbikEklektik"
-        />
-      </div>
     </>
   );
 }

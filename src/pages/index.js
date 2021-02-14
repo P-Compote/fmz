@@ -114,7 +114,7 @@ export default function Home({ data }) {
         <h1>Egyesületünk fő tevékenységei</h1>
         <div>
           <ImageLinkContainer>
-            <Link to="/fesztivalok">
+            <Link to="/fesztivalok-alt">
               <Img fluid={data.feszt.childImageSharp.fluid} alt="fesztiválok" />
               <OverlayText>Fesztiválok</OverlayText>
             </Link>
