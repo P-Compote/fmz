@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import ContainerStyles from '../styles/ContainerStyles';
-import { clearConfigCache } from 'prettier';
 
 export const TextBox = styled.div`
   display: grid;
@@ -49,10 +48,16 @@ const ImageLinkContainer = styled.div`
   position: relative;
   picture {
     opacity: 0.7;
-    transition: all 0.2s ease-in-out;
+    /* img {
+      filter: grayscale(80%);
+    } */
+    transition: all 0.3s ease-in-out;
   }
   &:hover {
     picture {
+      /* img {
+        filter: grayscale(0%);
+      } */
       opacity: 1;
     }
     div {
