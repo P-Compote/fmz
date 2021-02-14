@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ContainerStyles from '../styles/ContainerStyles';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
-import { TextBox } from './index';
+import { TextBox, ImageLinkContainer, OverlayText } from './index';
+import UbikTura from '../components/UbikTura';
+import UbikEklektik from '../components/UbikEklektik';
+import UbikFarm from '../components/UbikFarm';
 
 export default function Fesztivalok({ data }) {
+  const [fest, setFest] = useState('');
+
   return (
     <>
       <div>
-        <Img fluid={data.fesztivalokHero.childImageSharp.fluid} />
+        <Img
+          fluid={data.fesztivalokHero.childImageSharp.fluid}
+          alt="fesztiválok"
+        />
       </div>
       <h1>Fesztiválok</h1>
       <ContainerStyles>
@@ -55,6 +63,32 @@ export default function Fesztivalok({ data }) {
             festival@fmz.ngo
           </a>
         </h2>
+        <div>
+          <ImageLinkContainer>
+            <div onClick={() => setFest('ubikeklektik')} role="button">
+              <Img
+                fluid={data.ubikEklektik.childImageSharp.fluid}
+                alt="ubikEklektik"
+              />
+              <OverlayText>UbikEklektik</OverlayText>
+            </div>
+          </ImageLinkContainer>
+          <ImageLinkContainer>
+            <div onClick={() => setFest('ubiktura')} role="button">
+              <Img fluid={data.ubikTura.childImageSharp.fluid} alt="ubikTúra" />
+              <OverlayText>UbikTūra</OverlayText>
+            </div>
+          </ImageLinkContainer>
+          <ImageLinkContainer>
+            <div onClick={() => setFest('ubikfarm')} role="button">
+              <Img fluid={data.ubikFarm.childImageSharp.fluid} alt="ubikFarm" />
+              <OverlayText>UbikFarm</OverlayText>
+            </div>
+          </ImageLinkContainer>
+        </div>
+        {fest === 'ubiktura' && <UbikTura />}
+        {fest === 'ubikeklektik' && <UbikEklektik />}
+        {fest === 'ubikfarm' && <UbikFarm />}
       </ContainerStyles>
     </>
   );
@@ -67,6 +101,29 @@ export const query = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    ubikEklektik: file(
+      relativePath: { eq: "FMZ-subpageArtboard-ubikeklektik.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    ubikTura: file(relativePath: { eq: "FMZ-subpageArtboard-ubiktura.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    ubikFarm: file(relativePath: { eq: "FMZ-subpageArtboard-ubikfarm.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
