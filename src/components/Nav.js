@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import FmzLogo from '../assets/images/logo_dev.png';
+import FmzLogo from '../assets/images/fmz-logo.png';
 import ContainerStyles from '../styles/ContainerStyles';
 
 const NavStyles = styled.nav`
@@ -16,6 +16,13 @@ const NavStyles = styled.nav`
   }
   .logo-container {
     flex-grow: 1;
+    margin: 0;
+    display: grid;
+    align-content: center;
+    img {
+      display: block;
+      width: 26rem;
+    }
   }
   .nav-container {
     display: grid;
@@ -36,7 +43,7 @@ export default function Nav() {
       <NavStyles>
         <div className="logo-container">
           <Link to="/">
-            <img src={FmzLogo} alt="fmz-logo" style={{ width: 180 }} />
+            <img src={FmzLogo} alt="fmz-logo" />
           </Link>
         </div>
         <div className="nav-container">
