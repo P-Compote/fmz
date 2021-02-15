@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import ContainerStyles from '../styles/ContainerStyles';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { TextBox, ImageLinkContainer, OverlayText } from './index';
 import UbikTura from '../components/UbikTura';
@@ -8,7 +9,12 @@ import UbikEklektik from '../components/UbikEklektik';
 import UbikFarm from '../components/UbikFarm';
 
 export default function Fesztivalok({ data }) {
-  const [fest, setFest] = useState('ubikeklektik');
+  const [fest, setFest] = useState('');
+
+  const revealFestival = async festival => {
+    await setFest(festival);
+    scrollTo('#reszletek');
+  };
 
   return (
     <>
@@ -65,7 +71,7 @@ export default function Fesztivalok({ data }) {
         </h2>
         <div>
           <ImageLinkContainer>
-            <div onClick={() => setFest('ubikeklektik')} role="button">
+            <div onClick={() => revealFestival('ubikeklektik')} role="button">
               <Img
                 fluid={data.ubikEklektik.childImageSharp.fluid}
                 alt="ubikEklektik"
@@ -74,22 +80,26 @@ export default function Fesztivalok({ data }) {
             </div>
           </ImageLinkContainer>
           <ImageLinkContainer>
-            <div onClick={() => setFest('ubiktura')} role="button">
+            <div onClick={() => revealFestival('ubiktura')} role="button">
               <Img fluid={data.ubikTura.childImageSharp.fluid} alt="ubikTúra" />
               <OverlayText>UbikTūra</OverlayText>
             </div>
           </ImageLinkContainer>
+
           <ImageLinkContainer>
-            <div onClick={() => setFest('ubikfarm')} role="button">
+            <div onClick={() => revealFestival('ubikfarm')} role="button">
               <Img fluid={data.ubikFarm.childImageSharp.fluid} alt="ubikFarm" />
               <OverlayText>UbikFarm</OverlayText>
             </div>
           </ImageLinkContainer>
+          <div id="reszletek" style={{ marginTop: '-4rem' }} />
         </div>
       </ContainerStyles>
-      {fest === 'ubiktura' && <UbikTura />}
-      {fest === 'ubikeklektik' && <UbikEklektik />}
-      {fest === 'ubikfarm' && <UbikFarm />}
+      <div style={{ marginTop: '7rem' }}>
+        {fest === 'ubiktura' && <UbikTura />}
+        {fest === 'ubikeklektik' && <UbikEklektik />}
+        {fest === 'ubikfarm' && <UbikFarm />}
+      </div>
     </>
   );
 }

@@ -12,6 +12,12 @@ export default function Zenekarok({ data }) {
       </div>
       <h1>Zenekarok</h1>
       <ContainerStyles>
+        <div style={{ maxWidth: 348, margin: '3rem auto' }}>
+          <Img
+            fluid={data.gallusLogo.childImageSharp.fluid}
+            alt="gallus hirundo logo"
+          />
+        </div>
         <TextBox>
           <div>
             <p>
@@ -79,6 +85,15 @@ export const query = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    gallusLogo: file(
+      relativePath: { eq: "gallus_hirundo_full_logo_fekete_cropped.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

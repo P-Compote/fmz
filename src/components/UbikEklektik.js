@@ -3,6 +3,7 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
+import EmbedYoutube from './EmbedYoutube';
 
 export default function UbikEklektik() {
   const data = useStaticQuery(graphql`
@@ -70,22 +71,7 @@ export default function UbikEklektik() {
             ubikeklektik.com
           </a>
         </h2>
-        <div style={{ position: 'relative', height: 320 }}>
-          <div
-            style={{
-              border: '1px solid black',
-              width: '50%',
-              height: 'auto',
-              padding: 100,
-              display: 'grid',
-              placeItems: 'center',
-              position: 'absolute',
-              left: '15%',
-            }}
-          >
-            <p>Youtube beágyazás</p>
-          </div>
-        </div>
+        <EmbedYoutube videoId="Z5IcCoGnNzw" />
       </ContainerStyles>
       <div>
         <Img

@@ -36,15 +36,15 @@ export const ImageLinkContainer = styled.div`
   picture {
     opacity: 0.7;
     /* img {
-      filter: grayscale(80%);
+      filter: blur(2px) grayscale(80%);
     } */
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   &:hover {
     cursor: pointer;
     picture {
       /* img {
-        filter: grayscale(0%);
+        filter: blur(0) grayscale(0%);
       } */
       opacity: 1;
     }
@@ -114,7 +114,7 @@ export default function Home({ data }) {
         <h1>Egyesületünk fő tevékenységei</h1>
         <div>
           <ImageLinkContainer>
-            <Link to="/fesztivalok-alt">
+            <Link to="/fesztivalok">
               <Img fluid={data.feszt.childImageSharp.fluid} alt="fesztiválok" />
               <OverlayText>Fesztiválok</OverlayText>
             </Link>
