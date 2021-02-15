@@ -33,12 +33,14 @@ export default function Digital() {
               A foglalkozások lényege, hogy a résztvevők tudást szerezzenek az
               ének, az improvizáció, a színjátszás, az írás és a digitális
               zeneszerkesztés területén. Ahhoz, hogy elkészüljön egy dal, nem
-              kell semmi más, csak egy digitális eszköz és némi kreativitás. Az
-              informális digitális oktatási módszer célja, hogy az egy vagy akár
-              több alkalmas foglalkozások során egy közös dalt hozzunk létre. A
-              játékos módszerek segítségével az alkotói és kreatív energiák
-              könnyen kiszabadulnak illetve, azok eredményét könnyen meg lehet
-              örökíteni.
+              kell semmi más, csak egy digitális eszköz és némi kreativitás.
+            </p>
+            <p>
+              Az informális digitális oktatási módszer célja, hogy az egy vagy
+              akár több alkalmas foglalkozások során egy közös dalt hozzunk
+              létre. A játékos módszerek segítségével az alkotói és kreatív
+              energiák könnyen kiszabadulnak illetve, azok eredményét könnyen
+              meg lehet örökíteni.
             </p>
           </div>
           <div>
