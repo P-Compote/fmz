@@ -31,6 +31,7 @@ export default function EmbedYoutube({ videoId }) {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
+          title={videoId}
         ></iframe>
       </VideoWrapper>
     </VideoContainer>

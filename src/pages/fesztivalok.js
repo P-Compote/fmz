@@ -71,7 +71,12 @@ export default function Fesztivalok({ data }) {
         </h2>
         <div>
           <ImageLinkContainer>
-            <div onClick={() => revealFestival('ubikeklektik')} role="button">
+            <div
+              onClick={() => revealFestival('ubikeklektik')}
+              role="button"
+              tabIndex={0}
+              style={{ outline: 'none' }}
+            >
               <Img
                 fluid={data.ubikEklektik.childImageSharp.fluid}
                 alt="ubikEklektik"
@@ -80,14 +85,24 @@ export default function Fesztivalok({ data }) {
             </div>
           </ImageLinkContainer>
           <ImageLinkContainer>
-            <div onClick={() => revealFestival('ubiktura')} role="button">
+            <div
+              onClick={() => revealFestival('ubiktura')}
+              role="button"
+              tabIndex={0}
+              style={{ outline: 'none' }}
+            >
               <Img fluid={data.ubikTura.childImageSharp.fluid} alt="ubikTúra" />
               <OverlayText>UbikTūra</OverlayText>
             </div>
           </ImageLinkContainer>
 
           <ImageLinkContainer>
-            <div onClick={() => revealFestival('ubikfarm')} role="button">
+            <div
+              onClick={() => revealFestival('ubikfarm')}
+              role="button"
+              tabIndex={0}
+              style={{ outline: 'none' }}
+            >
               <Img fluid={data.ubikFarm.childImageSharp.fluid} alt="ubikFarm" />
               <OverlayText>UbikFarm</OverlayText>
             </div>

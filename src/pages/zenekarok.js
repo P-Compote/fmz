@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import ContainerStyles from '../styles/ContainerStyles';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import { TextBox } from './index';
+import { TextBox, ImageLinkContainer, OverlayText } from './index';
+import UbikTura from '../components/UbikTura';
+import Ferenczi from '../components/Ferenczi';
+import ParnoGraszt from '../components/ParnoGraszt';
+import Betyars from '../components/Betyars';
+import Napfonat from '../components/Napfonat';
+import Mordai from '../components/Mordai';
 
 export default function Zenekarok({ data }) {
+  const [zenekar, setZenekar] = useState('');
+
+  const revealZenekar = async band => {
+    await setZenekar(band);
+    scrollTo('#reszletek');
+  };
+
   return (
     <>
       <div>
@@ -73,7 +87,81 @@ export default function Zenekarok({ data }) {
             hirundo@gallushirundo.hu
           </a>
         </h2>
+        <div>
+          <ImageLinkContainer>
+            <div
+              onClick={() => revealZenekar('ferenczi')}
+              role="button"
+              tabIndex={0}
+              style={{ outline: 'none' }}
+            >
+              <Img
+                fluid={data.ferenczi.childImageSharp.fluid}
+                alt="Ferenczi György és az 1ső pesti rackák"
+              />
+              <OverlayText>Ferenczi György és az 1ső pesti rackák</OverlayText>
+            </div>
+          </ImageLinkContainer>
+          <ImageLinkContainer>
+            <div
+              onClick={() => revealZenekar('parno')}
+              role="button"
+              tabIndex={0}
+              style={{ outline: 'none' }}
+            >
+              <Img
+                fluid={data.parno.childImageSharp.fluid}
+                alt="Parno Graszt"
+              />
+              <OverlayText>Parno Graszt</OverlayText>
+            </div>
+          </ImageLinkContainer>
+          <ImageLinkContainer>
+            <div
+              onClick={() => revealZenekar('betyars')}
+              role="button"
+              tabIndex={0}
+              style={{ outline: 'none' }}
+            >
+              <Img
+                fluid={data.betyars.childImageSharp.fluid}
+                alt="Bohemian Betyars"
+              />
+              <OverlayText>Bohemian Betyars</OverlayText>
+            </div>
+          </ImageLinkContainer>
+          <ImageLinkContainer>
+            <div
+              onClick={() => revealZenekar('napfonat')}
+              role="button"
+              tabIndex={0}
+              style={{ outline: 'none' }}
+            >
+              <Img fluid={data.napfonat.childImageSharp.fluid} alt="Napfonat" />
+              <OverlayText>Napfonat</OverlayText>
+            </div>
+          </ImageLinkContainer>
+          <ImageLinkContainer>
+            <div
+              onClick={() => revealZenekar('mordai')}
+              role="button"
+              tabIndex={0}
+              style={{ outline: 'none' }}
+            >
+              <Img fluid={data.mordai.childImageSharp.fluid} alt="Mordái" />
+              <OverlayText>Mordái</OverlayText>
+            </div>
+          </ImageLinkContainer>
+          <div id="reszletek" style={{ marginTop: '-4rem' }} />
+        </div>
       </ContainerStyles>
+      <div style={{ marginTop: '7rem' }}>
+        {zenekar === 'ferenczi' && <Ferenczi />}
+        {zenekar === 'parno' && <ParnoGraszt />}
+        {zenekar === 'betyars' && <Betyars />}
+        {zenekar === 'napfonat' && <Napfonat />}
+        {zenekar === 'mordai' && <Mordai />}
+      </div>
     </>
   );
 }
@@ -92,6 +180,41 @@ export const query = graphql`
     gallusLogo: file(
       relativePath: { eq: "gallus_hirundo_full_logo_fekete_cropped.png" }
     ) {
+      childImageSharp {
+        fluid(maxWidth: 1200, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    ferenczi: file(relativePath: { eq: "FMZ-subpageArtboard-ferenczi.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    parno: file(relativePath: { eq: "FMZ-subpageArtboard-parno.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    betyars: file(relativePath: { eq: "FMZ-subpageArtboard-betyars.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    napfonat: file(relativePath: { eq: "FMZ-subpageArtboard-napfonat.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    mordai: file(relativePath: { eq: "FMZ-subpageArtboard-mordai.png" }) {
       childImageSharp {
         fluid(maxWidth: 1200, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
