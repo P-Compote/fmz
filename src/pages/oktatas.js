@@ -7,6 +7,7 @@ import { TextBox, OverlayText, ImageLinkContainer } from './index';
 import Bobajka from '../components/Bobajka';
 import Digital from '../components/Digital';
 import Kozossegi from '../components/Kozossegi';
+import SEO from '../components/SEO';
 
 export default function Oktatas({ data }) {
   const [oktatas, setOktatas] = useState('');
@@ -18,6 +19,7 @@ export default function Oktatas({ data }) {
 
   return (
     <>
+      <SEO title={`Oktatás`} />
       <div>
         <Img fluid={data.oktatasHero.childImageSharp.fluid} />
       </div>

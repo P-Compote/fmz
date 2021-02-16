@@ -7,6 +7,7 @@ import { TextBox, ImageLinkContainer, OverlayText } from './index';
 import UbikTura from '../components/UbikTura';
 import UbikEklektik from '../components/UbikEklektik';
 import UbikFarm from '../components/UbikFarm';
+import SEO from '../components/SEO';
 
 export default function Fesztivalok({ data }) {
   const [fest, setFest] = useState('');
@@ -18,6 +19,7 @@ export default function Fesztivalok({ data }) {
 
   return (
     <>
+      <SEO title={`Fesztiválok`} />
       <div>
         <Img
           fluid={data.fesztivalokHero.childImageSharp.fluid}

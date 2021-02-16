@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import ContainerStyles from '../styles/ContainerStyles';
+import SEO from '../components/SEO';
 
 export const TextBox = styled.div`
   display: grid;
@@ -58,6 +59,7 @@ export const ImageLinkContainer = styled.div`
 export default function Home({ data }) {
   return (
     <>
+      <SEO title={`Főoldal`} />
       <div>
         <Img fluid={data.hero.childImageSharp.fluid} />
       </div>

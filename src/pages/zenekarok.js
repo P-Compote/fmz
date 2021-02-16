@@ -4,12 +4,12 @@ import ContainerStyles from '../styles/ContainerStyles';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { TextBox, ImageLinkContainer, OverlayText } from './index';
-import UbikTura from '../components/UbikTura';
 import Ferenczi from '../components/Ferenczi';
 import ParnoGraszt from '../components/ParnoGraszt';
 import Betyars from '../components/Betyars';
 import Napfonat from '../components/Napfonat';
 import Mordai from '../components/Mordai';
+import SEO from '../components/SEO';
 
 export default function Zenekarok({ data }) {
   const [zenekar, setZenekar] = useState('');
@@ -21,6 +21,7 @@ export default function Zenekarok({ data }) {
 
   return (
     <>
+      <SEO title={`Zenekarok`} />
       <div>
         <Img fluid={data.zenekarokHero.childImageSharp.fluid} />
       </div>
