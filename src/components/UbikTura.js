@@ -36,11 +36,11 @@ export default function UbikTura() {
             style={{ width: 199, display: 'block', margin: '5rem auto' }}
           />
         </div>
-        <h2>
+        <h3>
           <em>
             "...minek titok? csakis ti-ták!" /Ubiciták, Felkiáltások könyve 19./
           </em>
-        </h2>
+        </h3>
         <TextBox>
           <div>
             <p>
@@ -70,14 +70,14 @@ export default function UbikTura() {
             </p>
           </div>
         </TextBox>
-        <h2>
+        <h3>
           <strong>További információért keressen minket:</strong>
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           <a href="mailto:ubiktura@gmail.com" target="_blank" rel="noreferrer">
             ubiktura@gmail.com
           </a>
-        </h2>
+        </h3>
         <EmbedYoutube videoId="-dB8wp5saWA" />
       </ContainerStyles>
       <div>

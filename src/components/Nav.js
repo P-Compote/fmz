@@ -33,7 +33,7 @@ const NavStyles = styled.nav`
   }
   a {
     margin: 0 3rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 `;
 

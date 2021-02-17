@@ -36,15 +36,15 @@ export default function UbikFarm() {
             style={{ width: 199, display: 'block', margin: '5rem auto' }}
           />
         </div>
-        <h2>
+        <h3>
           <em>
             „Csended tojás. Ahhoz, hogy felbontása közben egyetlen, fontos
             darabkát se veszíts el belőle, nagyon óvatosan kell eljárnod.”
           </em>
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           <em>/Ubiciták - Az Orákulum Nagyon Óvatos Eljárásai 12./</em>
-        </h2>
+        </h3>
         <TextBox>
           <div>
             <p>
@@ -66,14 +66,14 @@ export default function UbikFarm() {
             </p>
           </div>
         </TextBox>
-        <h2>
+        <h3>
           <strong>További információért keressen minket:</strong>
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           <a href="mailto:ubikfarm@gmail.com" target="_blank" rel="noreferrer">
             ubikfarm@gmail.com
           </a>
-        </h2>
+        </h3>
         <EmbedYoutube videoId="3ttP4S1T7o8" />
       </ContainerStyles>
       <div>

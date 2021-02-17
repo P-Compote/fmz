@@ -56,61 +56,61 @@ export default function Oktatas({ data }) {
             </p>
           </div>
         </TextBox>
-        <h2>
+        <h3>
           <strong>További információért keressen minket:</strong>
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           <a href="mailto:workshop@fmz.ngo" target="_blank" rel="noreferrer">
             workshop@fmz.ngo
           </a>
-        </h2>
-        <div>
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealOktatas('bobajka')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img
-                fluid={data.bobajka.childImageSharp.fluid}
-                alt="Bobájka bölcsi"
-              />
-              <OverlayText>Bobájka Bölcsi</OverlayText>
-            </div>
-          </ImageLinkContainer>
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealOktatas('digital')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img
-                fluid={data.digital.childImageSharp.fluid}
-                alt="Bobájka bölcsi"
-              />
-              <OverlayText>Digitális készségfejlesztés</OverlayText>
-            </div>
-          </ImageLinkContainer>
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealOktatas('kozossegi')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img
-                fluid={data.kozossegi.childImageSharp.fluid}
-                alt="Bobájka bölcsi"
-              />
-              <OverlayText>Közösségi dalírás</OverlayText>
-            </div>
-          </ImageLinkContainer>
-          <div id="reszletek" style={{ marginTop: '-4rem' }} />
-        </div>
+        </h3>
       </ContainerStyles>
-      <div style={{ marginTop: '7rem' }}>
+      <div>
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealOktatas('bobajka')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img
+              fluid={data.bobajka.childImageSharp.fluid}
+              alt="Bobájka bölcsi"
+            />
+            <OverlayText>Bobájka Bölcsi</OverlayText>
+          </div>
+        </ImageLinkContainer>
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealOktatas('digital')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img
+              fluid={data.digital.childImageSharp.fluid}
+              alt="Bobájka bölcsi"
+            />
+            <OverlayText>Digitális készségfejlesztés</OverlayText>
+          </div>
+        </ImageLinkContainer>
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealOktatas('kozossegi')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img
+              fluid={data.kozossegi.childImageSharp.fluid}
+              alt="Bobájka bölcsi"
+            />
+            <OverlayText>Közösségi dalírás</OverlayText>
+          </div>
+        </ImageLinkContainer>
+        <div id="reszletek" style={{ marginTop: '-1.4rem' }} />
+      </div>
+      <div style={{ marginTop: '8rem' }}>
         {oktatas === 'bobajka' && <Bobajka />}
         {oktatas === 'digital' && <Digital />}
         {oktatas === 'kozossegi' && <Kozossegi />}

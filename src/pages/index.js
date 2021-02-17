@@ -9,9 +9,17 @@ export const TextBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10rem;
+  div {
+    text-indent: 7%;
+  }
   p {
     text-align: justify;
   }
+  @media screen and (max-width: 768px) {
+    div {
+      text-indent: 0;
+    }
+  } ;
 `;
 
 export const OverlayText = styled.div`
@@ -21,7 +29,6 @@ export const OverlayText = styled.div`
   color: var(--black);
   padding: 5px;
   text-transform: uppercase;
-  font-family: 'Roboto';
   letter-spacing: 1px;
   bottom: 0;
   left: 30%;
@@ -105,36 +112,36 @@ export default function Home({ data }) {
             </p>
           </div>
         </TextBox>
-        <h2>
+        <h3>
           <strong>További információért keressen minket:</strong>
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           <a href="mailto:hello@fmz.ngo" target="_blank" rel="noreferrer">
             hello@fmz.ngo
           </a>
-        </h2>
+        </h3>
         <h1>Egyesületünk fő tevékenységei</h1>
-        <div>
-          <ImageLinkContainer>
-            <Link to="/fesztivalok">
-              <Img fluid={data.feszt.childImageSharp.fluid} alt="fesztiválok" />
-              <OverlayText>Fesztiválok</OverlayText>
-            </Link>
-          </ImageLinkContainer>
-          <ImageLinkContainer>
-            <Link to="/zenekarok">
-              <Img fluid={data.zenekar.childImageSharp.fluid} alt="zenekarok" />
-              <OverlayText>Zenekarok</OverlayText>
-            </Link>
-          </ImageLinkContainer>
-          <ImageLinkContainer>
-            <Link to="/oktatas">
-              <Img fluid={data.oktatas.childImageSharp.fluid} alt="oktatás" />
-              <OverlayText>Oktatás</OverlayText>
-            </Link>
-          </ImageLinkContainer>
-        </div>
       </ContainerStyles>
+      <div>
+        <ImageLinkContainer>
+          <Link to="/fesztivalok">
+            <Img fluid={data.feszt.childImageSharp.fluid} alt="fesztiválok" />
+            <OverlayText>Fesztiválok</OverlayText>
+          </Link>
+        </ImageLinkContainer>
+        <ImageLinkContainer>
+          <Link to="/zenekarok">
+            <Img fluid={data.zenekar.childImageSharp.fluid} alt="zenekarok" />
+            <OverlayText>Zenekarok</OverlayText>
+          </Link>
+        </ImageLinkContainer>
+        <ImageLinkContainer>
+          <Link to="/oktatas">
+            <Img fluid={data.oktatas.childImageSharp.fluid} alt="oktatás" />
+            <OverlayText>Oktatás</OverlayText>
+          </Link>
+        </ImageLinkContainer>
+      </div>
     </>
   );
 }
@@ -150,21 +157,21 @@ export const query = graphql`
     }
     feszt: file(relativePath: { eq: "FMZ-mainpageArtboard-festival.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1200, quality: 70) {
+        fluid(maxWidth: 2000, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     zenekar: file(relativePath: { eq: "FMZ-mainpageArtboard-zenekarok.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1200, quality: 70) {
+        fluid(maxWidth: 2000, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     oktatas: file(relativePath: { eq: "FMZ-mainpageArtboard-oktatas.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1200, quality: 70) {
+        fluid(maxWidth: 2000, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

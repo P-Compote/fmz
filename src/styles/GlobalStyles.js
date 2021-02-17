@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
     --white: #fff;
     --grey: #efefef;
     --blue: #2980b9;
+    --footer: #34495e;
     --container: 1080px;
   }
   
@@ -19,14 +20,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.8;
   }
-
-  /* .gatsby-image-wrapper img[src*=base64\\,] {
-    image-rendering: -moz-crisp-edges;
-    image-rendering: pixelated;
-  } */
 
   img {
     max-width: 100%;

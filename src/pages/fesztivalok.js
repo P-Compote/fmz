@@ -63,56 +63,56 @@ export default function Fesztivalok({ data }) {
             </p>
           </div>
         </TextBox>
-        <h2>
+        <h3>
           <strong>További információért keressen minket:</strong>
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           <a href="mailto:festival@fmz.ngo" target="_blank" rel="noreferrer">
             festival@fmz.ngo
           </a>
-        </h2>
-        <div>
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealFestival('ubikeklektik')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img
-                fluid={data.ubikEklektik.childImageSharp.fluid}
-                alt="ubikEklektik"
-              />
-              <OverlayText>UbikEklektik</OverlayText>
-            </div>
-          </ImageLinkContainer>
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealFestival('ubiktura')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img fluid={data.ubikTura.childImageSharp.fluid} alt="ubikTúra" />
-              <OverlayText>UbikTūra</OverlayText>
-            </div>
-          </ImageLinkContainer>
-
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealFestival('ubikfarm')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img fluid={data.ubikFarm.childImageSharp.fluid} alt="ubikFarm" />
-              <OverlayText>UbikFarm</OverlayText>
-            </div>
-          </ImageLinkContainer>
-          <div id="reszletek" style={{ marginTop: '-4rem' }} />
-        </div>
+        </h3>
       </ContainerStyles>
-      <div style={{ marginTop: '7rem' }}>
+      <div>
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealFestival('ubikeklektik')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img
+              fluid={data.ubikEklektik.childImageSharp.fluid}
+              alt="ubikEklektik"
+            />
+            <OverlayText>UbikEklektik</OverlayText>
+          </div>
+        </ImageLinkContainer>
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealFestival('ubiktura')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img fluid={data.ubikTura.childImageSharp.fluid} alt="ubikTúra" />
+            <OverlayText>UbikTūra</OverlayText>
+          </div>
+        </ImageLinkContainer>
+
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealFestival('ubikfarm')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img fluid={data.ubikFarm.childImageSharp.fluid} alt="ubikFarm" />
+            <OverlayText>UbikFarm</OverlayText>
+          </div>
+        </ImageLinkContainer>
+        <div id="reszletek" style={{ marginTop: '-1.4rem' }} />
+      </div>
+      <div style={{ marginTop: '8rem' }}>
         {fest === 'ubiktura' && <UbikTura />}
         {fest === 'ubikeklektik' && <UbikEklektik />}
         {fest === 'ubikfarm' && <UbikFarm />}

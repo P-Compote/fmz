@@ -27,7 +27,7 @@ export default function Zenekarok({ data }) {
       </div>
       <h1>Zenekarok</h1>
       <ContainerStyles>
-        <div style={{ maxWidth: 348, margin: '3rem auto' }}>
+        <div style={{ maxWidth: 348, margin: '5rem auto' }}>
           <Img
             fluid={data.gallusLogo.childImageSharp.fluid}
             alt="gallus hirundo logo"
@@ -67,10 +67,10 @@ export default function Zenekarok({ data }) {
             </p>
           </div>
         </TextBox>
-        <h2>
+        <h3>
           <strong>További információért keressen minket:</strong>
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           <a
             href="mailto:gallus@gallushirundo.hu"
             target="_blank"
@@ -78,8 +78,8 @@ export default function Zenekarok({ data }) {
           >
             gallus@gallushirundo.hu
           </a>
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           <a
             href="mailto:hirundo@gallushirundo.hu"
             target="_blank"
@@ -87,76 +87,73 @@ export default function Zenekarok({ data }) {
           >
             hirundo@gallushirundo.hu
           </a>
-        </h2>
-        <div>
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealZenekar('ferenczi')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img
-                fluid={data.ferenczi.childImageSharp.fluid}
-                alt="Ferenczi György és az 1ső pesti rackák"
-              />
-              <OverlayText>Ferenczi György és az 1ső pesti rackák</OverlayText>
-            </div>
-          </ImageLinkContainer>
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealZenekar('parno')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img
-                fluid={data.parno.childImageSharp.fluid}
-                alt="Parno Graszt"
-              />
-              <OverlayText>Parno Graszt</OverlayText>
-            </div>
-          </ImageLinkContainer>
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealZenekar('betyars')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img
-                fluid={data.betyars.childImageSharp.fluid}
-                alt="Bohemian Betyars"
-              />
-              <OverlayText>Bohemian Betyars</OverlayText>
-            </div>
-          </ImageLinkContainer>
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealZenekar('napfonat')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img fluid={data.napfonat.childImageSharp.fluid} alt="Napfonat" />
-              <OverlayText>Napfonat</OverlayText>
-            </div>
-          </ImageLinkContainer>
-          <ImageLinkContainer>
-            <div
-              onClick={() => revealZenekar('mordai')}
-              role="button"
-              tabIndex={0}
-              style={{ outline: 'none' }}
-            >
-              <Img fluid={data.mordai.childImageSharp.fluid} alt="Mordái" />
-              <OverlayText>Mordái</OverlayText>
-            </div>
-          </ImageLinkContainer>
-          <div id="reszletek" style={{ marginTop: '-4rem' }} />
-        </div>
+        </h3>
       </ContainerStyles>
-      <div style={{ marginTop: '7rem' }}>
+      <div>
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealZenekar('ferenczi')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img
+              fluid={data.ferenczi.childImageSharp.fluid}
+              alt="Ferenczi György és az 1ső pesti rackák"
+            />
+            <OverlayText>Ferenczi György és az 1ső pesti rackák</OverlayText>
+          </div>
+        </ImageLinkContainer>
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealZenekar('parno')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img fluid={data.parno.childImageSharp.fluid} alt="Parno Graszt" />
+            <OverlayText>Parno Graszt</OverlayText>
+          </div>
+        </ImageLinkContainer>
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealZenekar('betyars')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img
+              fluid={data.betyars.childImageSharp.fluid}
+              alt="Bohemian Betyars"
+            />
+            <OverlayText>Bohemian Betyars</OverlayText>
+          </div>
+        </ImageLinkContainer>
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealZenekar('napfonat')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img fluid={data.napfonat.childImageSharp.fluid} alt="Napfonat" />
+            <OverlayText>Napfonat</OverlayText>
+          </div>
+        </ImageLinkContainer>
+        <ImageLinkContainer>
+          <div
+            onClick={() => revealZenekar('mordai')}
+            role="button"
+            tabIndex={0}
+            style={{ outline: 'none' }}
+          >
+            <Img fluid={data.mordai.childImageSharp.fluid} alt="Mordái" />
+            <OverlayText>Mordái</OverlayText>
+          </div>
+        </ImageLinkContainer>
+        <div id="reszletek" style={{ marginTop: '-1.4rem' }} />
+      </div>
+      <div style={{ marginTop: '8rem' }}>
         {zenekar === 'ferenczi' && <Ferenczi />}
         {zenekar === 'parno' && <ParnoGraszt />}
         {zenekar === 'betyars' && <Betyars />}

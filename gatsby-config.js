@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`alegreya sans\:300,400,400i,700`, `roboto`],
+        fonts: [`poppins\:300,400,400i,500,600,700`],
         display: 'swap',
       },
     },
