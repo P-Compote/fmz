@@ -38,12 +38,12 @@ export default function UbikEklektik() {
             style={{ width: 250, display: 'block', margin: '5rem auto' }}
           />
         </div>
-        <h2>
+        <h3>
           <em>
             „megkoronázva a nyarat, hogy eljöve közénk és leüle tüzünkhöz…”
             /Ubiciták – Törzskönyvények Könyve/
           </em>
-        </h2>
+        </h3>
         <TextBox>
           <div>
             <p>
@@ -63,14 +63,14 @@ export default function UbikEklektik() {
             </p>
           </div>
         </TextBox>
-        <h2>
+        <h3>
           <strong>További információért keressen minket:</strong>
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           <a href="https://ubikeklektik.com" target="_blank" rel="noreferrer">
             ubikeklektik.com
           </a>
-        </h2>
+        </h3>
         <EmbedYoutube videoId="Z5IcCoGnNzw" />
       </ContainerStyles>
       <div>

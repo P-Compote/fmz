@@ -52,10 +52,10 @@ export default function Bobajka() {
             </p>
           </div>
         </TextBox>
-        <h2>
+        <h3>
           <strong>További információért keressen minket:</strong>
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           <a
             href="mailto:hello@bobajkabolcsi.hu"
             target="_blank"
@@ -63,7 +63,7 @@ export default function Bobajka() {
           >
             hello@bobajkabolcsi.hu
           </a>
-        </h2>
+        </h3>
         <EmbedYoutube videoId="" />
       </ContainerStyles>
     </>
