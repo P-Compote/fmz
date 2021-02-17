@@ -8,7 +8,7 @@ import EmbedYoutube from './EmbedYoutube';
 export default function ParnoGraszt() {
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "kakastipo.jpg" }) {
+      logo: file(relativePath: { eq: "betyars_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200, quality: 70) {
             ...GatsbyImageSharpFluid_withWebp
@@ -35,7 +35,7 @@ export default function ParnoGraszt() {
           />
         </div>
         <h4>
-          <em>„Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</em>
+          <em>„Radikális, friss, mezítlábas mulatozás”</em>
         </h4>
         <TextBox>
           <div>
@@ -61,14 +61,6 @@ export default function ParnoGraszt() {
             </p>
           </div>
         </TextBox>
-        <h3>
-          <strong>További információért keressen minket:</strong>
-        </h3>
-        <h3>
-          <a href="mailto:" target="_blank" rel="noreferrer">
-            IDE KELL EGY EMAIL VAGY WEBOLDAL
-          </a>
-        </h3>
         <EmbedYoutube videoId="" />
       </ContainerStyles>
       <div>

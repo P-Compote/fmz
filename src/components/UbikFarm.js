@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
-import EmbedYoutube from './EmbedYoutube';
+import EmbedFacebook from './EmbedFacebook';
 
 export default function UbikFarm() {
   const data = useStaticQuery(graphql`
@@ -74,7 +74,7 @@ export default function UbikFarm() {
             ubikfarm@gmail.com
           </a>
         </h3>
-        <EmbedYoutube videoId="3ttP4S1T7o8" />
+        <EmbedFacebook videoId="159796498241310" fbPage="ubikeklektik" />
       </ContainerStyles>
       <div>
         <Img fluid={data.ubikFarmMain.childImageSharp.fluid} alt="UbikFarm" />

@@ -3,7 +3,6 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
-import EmbedYoutube from './EmbedYoutube';
 
 export default function Bobajka() {
   const data = useStaticQuery(graphql`
@@ -11,6 +10,15 @@ export default function Bobajka() {
       logo: file(relativePath: { eq: "bobajka-logo.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1200, quality: 70) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      bobajkaMain: file(
+        relativePath: { eq: "FMZ-subpage-big-javArtboard-10.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 2000, quality: 70) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -64,8 +72,13 @@ export default function Bobajka() {
             hello@bobajkabolcsi.hu
           </a>
         </h3>
-        <EmbedYoutube videoId="" />
       </ContainerStyles>
+      <div>
+        <Img
+          fluid={data.bobajkaMain.childImageSharp.fluid}
+          alt="Bobájka bölcsi"
+        />
+      </div>
     </>
   );
 }

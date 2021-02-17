@@ -72,20 +72,11 @@ export default function Zenekarok({ data }) {
         </h3>
         <h3>
           <a
-            href="mailto:gallus@gallushirundo.hu"
+            href="mailto:music@gallushirundo.hu"
             target="_blank"
             rel="noreferrer"
           >
-            gallus@gallushirundo.hu
-          </a>
-        </h3>
-        <h3>
-          <a
-            href="mailto:hirundo@gallushirundo.hu"
-            target="_blank"
-            rel="noreferrer"
-          >
-            hirundo@gallushirundo.hu
+            music@gallushirundo.hu
           </a>
         </h3>
       </ContainerStyles>

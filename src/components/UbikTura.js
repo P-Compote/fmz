@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
-import EmbedYoutube from './EmbedYoutube';
+import EmbedFacebook from './EmbedFacebook';
 
 export default function UbikTura() {
   const data = useStaticQuery(graphql`
@@ -16,7 +16,7 @@ export default function UbikTura() {
         }
       }
       ubikTuraMain: file(
-        relativePath: { eq: "FMZ-subpage-bigArtboard-ubiktura.png" }
+        relativePath: { eq: "FMZ-fejlecArtboard-fesztival.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 70) {
@@ -46,12 +46,15 @@ export default function UbikTura() {
             <p>
               Az UbikTūra az UbikEklektik univerzum része, egy csúszkáló
               valóságokon átívelő együttállás ahol a különböző törzsek keresik
-              az alkotás közös pontjait. Szemben az UbikEklektik zenei és
-              művészeti sokszínűségével, az UbikTūrán a természetjárást és az
-              akusztikus zenét tettük középpontba, hogy egy valóban falusi
-              hangulatú, a helyi lakosságnak is befogadható keresztmetszet
-              jöjjön létre. A rendezvényeink programja az akusztikus népzene,
-              népi hagyományok ápolására, ezek modernizálására alapul.
+              az alkotás közös pontjait.
+            </p>
+            <p>
+              Szemben az UbikEklektik zenei és művészeti sokszínűségével, az
+              UbikTūrán a természetjárást és az akusztikus zenét tettük
+              középpontba, hogy egy valóban falusi hangulatú, a helyi
+              lakosságnak is befogadható keresztmetszet jöjjön létre. A
+              rendezvényeink programja az akusztikus népzene, népi hagyományok
+              ápolására, ezek modernizálására alapul.
             </p>
           </div>
           <div>
@@ -78,7 +81,7 @@ export default function UbikTura() {
             ubiktura@gmail.com
           </a>
         </h3>
-        <EmbedYoutube videoId="-dB8wp5saWA" />
+        <EmbedFacebook videoId="1611397285708425" fbPage="ubikeklektik" />
       </ContainerStyles>
       <div>
         <Img fluid={data.ubikTuraMain.childImageSharp.fluid} alt="UbikTúra" />

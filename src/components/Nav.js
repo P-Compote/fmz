@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import FmzLogo from '../assets/images/fmz-logo.png';
+import FmzLogo from '../assets/images/FMZ_logo.png';
 import ContainerStyles from '../styles/ContainerStyles';
 
 const NavStyles = styled.nav`
@@ -43,7 +43,7 @@ export default function Nav() {
       <NavStyles>
         <div className="logo-container">
           <Link to="/">
-            <img src={FmzLogo} alt="fmz-logo" />
+            <img src={FmzLogo} alt="Fiatalok a Magyar Zenéért Egyesület logo" />
           </Link>
         </div>
         <div className="nav-container">

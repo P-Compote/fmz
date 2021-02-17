@@ -16,8 +16,13 @@ export const TextBox = styled.div`
     text-align: justify;
   }
   @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 0;
     div {
       text-indent: 0;
+    }
+    p {
+      text-align: left;
     }
   } ;
 `;
@@ -25,9 +30,9 @@ export const TextBox = styled.div`
 export const OverlayText = styled.div`
   width: 40%;
   position: absolute;
+  padding: 5px;
   background: rgba(255, 255, 255, 0.6);
   color: var(--black);
-  padding: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
   bottom: 0;
@@ -37,6 +42,13 @@ export const OverlayText = styled.div`
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   transition: all 0.2s ease-in-out;
+  font-size: 1.7rem;
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    left: 10%;
+    font-size: 1.4rem;
+    padding: 2px;
+  } ;
 `;
 
 export const ImageLinkContainer = styled.div`
@@ -120,7 +132,7 @@ export default function Home({ data }) {
             hello@fmz.ngo
           </a>
         </h3>
-        <h1>Egyesületünk fő tevékenységei</h1>
+        <h2>Egyesületünk fő tevékenységei</h2>
       </ContainerStyles>
       <div>
         <ImageLinkContainer>
@@ -169,7 +181,7 @@ export const query = graphql`
         }
       }
     }
-    oktatas: file(relativePath: { eq: "FMZ-mainpageArtboard-oktatas.png" }) {
+    oktatas: file(relativePath: { eq: "FMZ-subpage-big-javArtboard-9.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp

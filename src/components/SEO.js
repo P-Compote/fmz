@@ -27,7 +27,7 @@ export default function SEO({ children, location, description, title, image }) {
       <meta name="description" content={site.siteMetadata.description} />
       {/* Open Graph */}
       {location && <meta property="og:url" content={location.href} />}
-      <meta property="og:image" content={image || '/fmz-logo.png'} />
+      <meta property="og:image" content={image || '/FMZ_logo.png'} />
       <meta property="og:title" content={title} key="ogtitle" />
       <meta
         propery="og:site_name"

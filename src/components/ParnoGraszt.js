@@ -58,15 +58,7 @@ export default function ParnoGraszt() {
             </p>
           </div>
         </TextBox>
-        <h3>
-          <strong>További információért keressen minket:</strong>
-        </h3>
-        <h3>
-          <a href="mailto:" target="_blank" rel="noreferrer">
-            IDE KELL EGY EMAIL VAGY WEBOLDAL
-          </a>
-        </h3>
-        <EmbedYoutube videoId="" />
+        <EmbedYoutube videoId="5wXLMzUQ7WE" />
       </ContainerStyles>
       <div>
         <Img fluid={data.main.childImageSharp.fluid} alt="Parno Graszt" />

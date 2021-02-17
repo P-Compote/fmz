@@ -67,8 +67,8 @@ export default function Fesztivalok({ data }) {
           <strong>További információért keressen minket:</strong>
         </h3>
         <h3>
-          <a href="mailto:festival@fmz.ngo" target="_blank" rel="noreferrer">
-            festival@fmz.ngo
+          <a href="mailto:info@fmz.ngo" target="_blank" rel="noreferrer">
+            info@fmz.ngo
           </a>
         </h3>
       </ContainerStyles>
@@ -124,7 +124,7 @@ export default function Fesztivalok({ data }) {
 export const query = graphql`
   query {
     fesztivalokHero: file(
-      relativePath: { eq: "FMZ-fejlecArtboard-fesztival.png" }
+      relativePath: { eq: "FMZ-subpage-bigArtboard-ubikeklektik.png" }
     ) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {

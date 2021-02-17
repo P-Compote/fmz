@@ -35,29 +35,30 @@ export default function Mordai() {
           />
         </div>
         <h4>
-          <em>„Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</em>
+          <em>
+            „Mély brácsa és szabad szaxofon harmóniáinak keveredése magyar
+            balladák szövegvilágával.”
+          </em>
         </h4>
         <TextBox>
           <div>
             <p>
               A MORDÁI a 60-as, 70-es évek kisérletező magyar népzenei vonulatok
               repertoárjából (Muzsikás Zenekar, Sebő együttes, stb.) táplálkozó
-              folk rock zenekar.
+              folk rock zenekar. Hangvételében az útonállók sötét szellemiségét
+              idézi meg.
             </p>
           </div>
           <div>
-            <p>Hangvételében az útonállók sötét szellemiségét idézi meg.</p>
+            <p>
+              A zenekar elismert magyar népzenei és szabadzenei körökből jött
+              létre, élen a számom sikeres projektben közreműködő Nové Soma
+              énekessel. A füstös, balladai homály átjárja a koncertet, amely
+              kétségen kívül egyedülálló színfolt a magyar világzene palettáján.{' '}
+            </p>
           </div>
         </TextBox>
-        <h3>
-          <strong>További információért keressen minket:</strong>
-        </h3>
-        <h3>
-          <a href="mailto:" target="_blank" rel="noreferrer">
-            IDE KELL EGY EMAIL VAGY WEBOLDAL
-          </a>
-        </h3>
-        <EmbedYoutube videoId="" />
+        <EmbedYoutube videoId="L6Cl7UC9Jz4" />
       </ContainerStyles>
       <div>
         <Img fluid={data.main.childImageSharp.fluid} alt="Mordái" />

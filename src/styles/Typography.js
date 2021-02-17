@@ -5,6 +5,9 @@ const Typography = createGlobalStyle`
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);
     font-size: 10px;
+    @media screen and (max-width: 768px) {
+    font-size: 8px;
+    }
   }
 
   h1,h2,h3,h4,h5,h6 {

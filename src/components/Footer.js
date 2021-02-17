@@ -31,7 +31,7 @@ const FooterStyles = styled.div`
 export default function Footer() {
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "fmz-logo.png" }) {
+      logo: file(relativePath: { eq: "FMZ_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 350) {
             ...GatsbyImageSharpFluid_withWebp_noBase64

@@ -1,7 +1,6 @@
 import React from 'react';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
-import EmbedYoutube from './EmbedYoutube';
 
 const Digital = () => (
   <>
@@ -41,15 +40,6 @@ const Digital = () => (
           </p>
         </div>
       </TextBox>
-      <h3>
-        <strong>További információért keressen minket:</strong>
-      </h3>
-      <h3>
-        <a href="mailto:" target="_blank" rel="noreferrer">
-          IDE KELL EGY EMAIL VAGY WEBOLDAL
-        </a>
-      </h3>
-      <EmbedYoutube videoId="" />
     </ContainerStyles>
   </>
 );

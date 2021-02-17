@@ -3,13 +3,13 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
-import EmbedYoutube from './EmbedYoutube';
+import EmbedFacebook from './EmbedFacebook';
 
 export default function UbikEklektik() {
   const data = useStaticQuery(graphql`
     query {
       ubikEklektikLogo: file(
-        relativePath: { eq: "ubikeklektik-logo-feher.jpg" }
+        relativePath: { eq: "UBIKEKLEKTIK_logo_black.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 1200, quality: 70) {
@@ -18,7 +18,7 @@ export default function UbikEklektik() {
         }
       }
       ubikEklektikMain: file(
-        relativePath: { eq: "FMZ-subpage-bigArtboard-ubikeklektik.png" }
+        relativePath: { eq: "FMZ-subpage-big-javArtboard-2.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 70) {
@@ -71,7 +71,7 @@ export default function UbikEklektik() {
             ubikeklektik.com
           </a>
         </h3>
-        <EmbedYoutube videoId="Z5IcCoGnNzw" />
+        <EmbedFacebook videoId="2711562649081473" fbPage="ubikeklektik" />
       </ContainerStyles>
       <div>
         <Img

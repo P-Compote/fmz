@@ -39,14 +39,6 @@ const Kozossegi = () => (
           </p>
         </div>
       </TextBox>
-      <h3>
-        <strong>További információért keressen minket:</strong>
-      </h3>
-      <h3>
-        <a href="mailto:" target="_blank" rel="noreferrer">
-          IDE KELL EGY EMAIL VAGY WEBOLDAL
-        </a>
-      </h3>
       <EmbedYoutube videoId="-dB8wp5saWA" />
     </ContainerStyles>
   </>
