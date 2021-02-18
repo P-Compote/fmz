@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
     --yellow: #ffc600;
     --white: #fff;
     --grey: #efefef;
-    --blue: #2980b9;
+    --blue: #3742fa;
     --footer: #34495e;
     --spotify: #1db954;
     --facebook: #3b5998;
