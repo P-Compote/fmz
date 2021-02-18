@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedYoutube from './EmbedYoutube';
+import Social from './SocialLinks';
 
 export default function ParnoGraszt() {
   const data = useStaticQuery(graphql`
@@ -58,6 +59,12 @@ export default function ParnoGraszt() {
             </p>
           </div>
         </TextBox>
+        <Social
+          web="https://www.parnograszt.hu/"
+          instagram="https://www.instagram.com/parnograszt/"
+          spotify="https://open.spotify.com/artist/5hBCfYFEDK8otrksMYuzoL?si=MAC7id60RzWxYXC7JDpO4A"
+          facebook="https://www.facebook.com/parnograszt"
+        />
         <EmbedYoutube videoId="5wXLMzUQ7WE" />
       </ContainerStyles>
       <div>

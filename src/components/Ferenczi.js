@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedYoutube from './EmbedYoutube';
+import Social from './SocialLinks';
 
 export default function Ferenczi() {
   const data = useStaticQuery(graphql`
@@ -67,6 +68,10 @@ export default function Ferenczi() {
             </p>
           </div>
         </TextBox>
+        <Social
+          spotify="https://open.spotify.com/artist/7MWL2LI4duRTvtvIu9gmXP?si=0vit-sE5RmCTim1Ky6iPWA"
+          facebook="https://www.facebook.com/rackajam"
+        />
         <EmbedYoutube videoId="Ar85Cb3F8Vw" />
       </ContainerStyles>
       <div>

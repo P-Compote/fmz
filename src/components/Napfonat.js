@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedYoutube from './EmbedYoutube';
+import Social from './SocialLinks';
 
 export default function Napfonat() {
   const data = useStaticQuery(graphql`
@@ -65,6 +66,12 @@ export default function Napfonat() {
             </p>
           </div>
         </TextBox>
+        <Social
+          youtube="https://www.youtube.com/channel/UC-qRSe0-JzgHHALMry_yTgg?sub_confirmation=1"
+          instagram="https://www.instagram.com/napfonatzene/"
+          spotify="https://open.spotify.com/episode/489HOiBuB4NScr7KCTnukg?si=t_dVZWVKT3CeVvwdNvtVQA"
+          facebook="https://www.facebook.com/napfonatzene"
+        />
         <EmbedYoutube videoId="pKlis9_1AWM" />
       </ContainerStyles>
       <div>

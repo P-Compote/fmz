@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedYoutube from './EmbedYoutube';
+import Social from './SocialLinks';
 
 export default function Mordai() {
   const data = useStaticQuery(graphql`
@@ -58,6 +59,11 @@ export default function Mordai() {
             </p>
           </div>
         </TextBox>
+        <Social
+          youtube="https://www.youtube.com/channel/UCo-Fh9u4eDKH6n_iTIN_0ow?sub_confirmation=1"
+          spotify="https://open.spotify.com/artist/43Zk3zSxVK6O9brG92ICTI?si=qbN53xCgTqqKALhXBp2G7w"
+          facebook="https://www.facebook.com/mordaimusic/"
+        />
         <EmbedYoutube videoId="L6Cl7UC9Jz4" />
       </ContainerStyles>
       <div>

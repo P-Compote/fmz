@@ -3,6 +3,7 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
+import Social from './SocialLinks';
 
 export default function Bobajka() {
   const data = useStaticQuery(graphql`
@@ -72,6 +73,11 @@ export default function Bobajka() {
             hello@bobajkabolcsi.hu
           </a>
         </h3>
+        <Social
+          web="https://bobajkabolcsi.hu/"
+          instagram="https://www.instagram.com/bobajkabolcsi/"
+          facebook="https://www.facebook.com/bobajkabolcsi"
+        />
       </ContainerStyles>
       <div>
         <Img

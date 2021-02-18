@@ -55,11 +55,11 @@ const ThinkaholistsFooter = () => (
   <ThinkaholistsFooterStyles>
     <p className="center">
       Készült{' '}
-      <a href="https://gatsbyjs.com" target="_blank">
+      <a href="https://gatsbyjs.com" target="_blank" rel="noreferrer">
         Gatsby
       </a>
       -vel, a{' '}
-      <a href="https://thinkaholists.com" target="_blank">
+      <a href="https://thinkaholists.com" target="_blank" rel="noreferrer">
         Thinkaholists
       </a>{' '}
       csapata által.
