@@ -5,6 +5,7 @@ import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedYoutube from './EmbedYoutube';
 import Social from './SocialLinks';
+import LogoContainer from '../styles/LogoContainer';
 
 export default function Mordai() {
   const data = useStaticQuery(graphql`
@@ -28,13 +29,9 @@ export default function Mordai() {
   return (
     <>
       <ContainerStyles>
-        <div>
-          <Img
-            fluid={data.logo.childImageSharp.fluid}
-            alt="Mordái logo"
-            style={{ width: 320, display: 'block', margin: '5rem auto' }}
-          />
-        </div>
+        <LogoContainer>
+          <Img fluid={data.logo.childImageSharp.fluid} alt="Mordái logo" />
+        </LogoContainer>
         <h4>
           <em>
             „Mély brácsa és szabad szaxofon harmóniáinak keveredése magyar

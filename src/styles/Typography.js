@@ -5,9 +5,6 @@ const Typography = createGlobalStyle`
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);
     font-size: 10px;
-    @media screen and (max-width: 768px) {
-    font-size: 8px;
-    }
   }
 
   h1,h2,h3,h4,h5,h6 {
@@ -19,16 +16,25 @@ const Typography = createGlobalStyle`
     font-size: 5rem;
     letter-spacing: 1px;
     font-weight: 600;
+    margin:0;
+    margin: 3rem 0;
   }
 
   h2 {
     font-weight: 600;
     font-size: 4rem;
+    margin:0;
+    margin-bottom: 3rem;
   }
 
   h3 {
-  font-size: 2.2rem;
-}
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
 
   a {
     color: var(--black);
@@ -43,6 +49,17 @@ const Typography = createGlobalStyle`
   a[href^="mailto:"]:hover {
     text-decoration: underline;
     text-decoration-color: var(--blue);
+  }
+  @media screen and (max-width: 768px) {
+    html{
+      font-size: 8px;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+    font-size: 3rem;
+  }
   }
 `;
 

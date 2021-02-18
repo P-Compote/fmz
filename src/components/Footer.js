@@ -9,14 +9,24 @@ const ThinkaholistsFooterStyles = styled.footer`
   padding: 0.5rem 0;
   p {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   a {
     color: var(--white);
-    font-size: 1.2rem;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    padding: 0 3px;
   }
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    padding: 0 3px;
+    color: var(--black);
+  }
+  a[href*='gatsby']:hover {
+    background-color: rebeccapurple;
+    color: var(--white);
   }
 `;
 

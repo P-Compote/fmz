@@ -7,7 +7,7 @@ import { FaSpotify } from 'react-icons/fa';
 import { FaFacebookSquare } from 'react-icons/fa';
 
 const SocialContainer = styled.div`
-  margin: 7rem auto;
+  margin: 6rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   justify-content: space-around;

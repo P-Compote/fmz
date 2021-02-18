@@ -71,7 +71,7 @@ export default function UbikEklektik() {
             ubikeklektik.com
           </a>
         </h3>
-        <EmbedFacebook videoId="2711562649081473" fbPage="ubikeklektik" />
+        <EmbedFacebook videoId="733726573631699" fbPage="ubikeklektik" />
       </ContainerStyles>
       <div>
         <Img

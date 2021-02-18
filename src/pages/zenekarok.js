@@ -10,6 +10,7 @@ import Betyars from '../components/Betyars';
 import Napfonat from '../components/Napfonat';
 import Mordai from '../components/Mordai';
 import SEO from '../components/SEO';
+import LogoContainer from '../styles/LogoContainer';
 
 export default function Zenekarok({ data }) {
   const [zenekar, setZenekar] = useState('');
@@ -27,12 +28,12 @@ export default function Zenekarok({ data }) {
       </div>
       <h1>Zenekarok</h1>
       <ContainerStyles>
-        <div style={{ maxWidth: 348, margin: '5rem auto' }}>
+        <LogoContainer>
           <Img
             fluid={data.gallusLogo.childImageSharp.fluid}
             alt="gallus hirundo logo"
           />
-        </div>
+        </LogoContainer>
         <TextBox>
           <div>
             <p>

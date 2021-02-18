@@ -5,6 +5,7 @@ import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedYoutube from './EmbedYoutube';
 import Social from './SocialLinks';
+import LogoContainer from '../styles/LogoContainer';
 
 export default function ParnoGraszt() {
   const data = useStaticQuery(graphql`
@@ -30,32 +31,43 @@ export default function ParnoGraszt() {
   return (
     <>
       <ContainerStyles>
-        <div>
+        <LogoContainer>
           <Img
             fluid={data.logo.childImageSharp.fluid}
             alt="Parno Graszt logo"
-            style={{ width: 320, display: 'block', margin: '5rem auto' }}
           />
-        </div>
+        </LogoContainer>
         <h4>
-          <em>„Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</em>
+          <em>
+            “Nem csak “még egy cigányzenekar”: ők a cigányzene adatközlői."
+          </em>
         </h4>
         <TextBox>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Egestas sed tempus urna et. Suspendisse interdum consectetur
-              libero id faucibus nisl tincidunt eget nullam. Tortor at auctor
-              urna nunc id cursus metus.
+              Az egyik legeredetibb, legnépszerűbb tradicionális cigány zenét
+              játszó zenekar, akik koncertjeiken a semmihez sem fogható
+              dinamikus előadásmódjukkal, a színpadról leáramló energiájukkal
+              jellemzően szinte „felrobbantják a nézőteret”.
+            </p>
+            <p>
+              Bejárták szinte az egész világot, koncerteztek Európa szinte
+              összes, Ázsia több országában, többször az USA-ban és Mexikóban.
             </p>
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              mollis aliquam ut porttitor leo a diam. Ornare arcu dui vivamus
-              arcu felis bibendum. Morbi non arcu risus quis varius.
+              A 9 fős zenekar, amelynek tagjai egy családot alkotnak - hiszen
+              szegről-végről mindenki mindenkinek rokona - alapvetően autentikus
+              cigány zenét játszik, de számtalan népszerű saját szerzeményük,
+              illetve egyedi feldolgozásaik is vannak (Quimby, AC/DC, stb.
+              dalok).
+            </p>
+            <p>
+              A zenekar neve cigányul fehér lovat jelent, ami a tisztaság és a
+              szabadság jelképe. Ezt a betöretlen, vad energiát viszik
+              színpadra, miközben hűek maradnak ahhoz a szellemiséghez és
+              kultúrához, amiben felnőttek.
             </p>
           </div>
         </TextBox>

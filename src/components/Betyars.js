@@ -5,6 +5,7 @@ import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedYoutube from './EmbedYoutube';
 import Social from './SocialLinks';
+import LogoContainer from '../styles/LogoContainer';
 
 export default function ParnoGraszt() {
   const data = useStaticQuery(graphql`
@@ -28,13 +29,12 @@ export default function ParnoGraszt() {
   return (
     <>
       <ContainerStyles>
-        <div>
+        <LogoContainer>
           <Img
             fluid={data.logo.childImageSharp.fluid}
             alt="Bohemian Betyars logo"
-            style={{ width: 320, display: 'block', margin: '5rem auto' }}
           />
-        </div>
+        </LogoContainer>
         <h4>
           <em>„Radikális, friss, mezítlábas mulatozás”</em>
         </h4>
@@ -69,7 +69,7 @@ export default function ParnoGraszt() {
           spotify="https://open.spotify.com/artist/2ezYPSKWBfnFTobN9puCow?si=cM9JHxocSaepvPgG_PFg1A"
           facebook="https://www.facebook.com/bohemianbetyars"
         />
-        <EmbedYoutube videoId="" />
+        <EmbedYoutube videoId="1Hok9k0xkMA" />
       </ContainerStyles>
       <div>
         <Img fluid={data.main.childImageSharp.fluid} alt="Bohemian Betyars" />

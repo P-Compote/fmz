@@ -17,12 +17,16 @@ export const TextBox = styled.div`
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 0rem;
     div {
       text-indent: 0;
     }
     p {
-      text-align: left;
+      /* text-align: left; */
+      margin: 0;
+      margin-bottom: 2.5rem;
+      font-size: 2rem;
+      line-height: 1.9;
     }
   } ;
 `;

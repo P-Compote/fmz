@@ -1,10 +1,12 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedYoutube from './EmbedYoutube';
 import Social from './SocialLinks';
+import LogoContainer from '../styles/LogoContainer';
 
 export default function Napfonat() {
   const data = useStaticQuery(graphql`
@@ -25,17 +27,14 @@ export default function Napfonat() {
       }
     }
   `);
+
   return (
     <>
       <ContainerStyles>
-        <div>
-          <Img
-            fluid={data.logo.childImageSharp.fluid}
-            alt="Napfonat logo"
-            style={{ width: 320, display: 'block', margin: '5rem auto' }}
-          />
+        <LogoContainer>
+          <Img fluid={data.logo.childImageSharp.fluid} alt="Napfonat logo" />
           <h2>Napfonat</h2>
-        </div>
+        </LogoContainer>
         <h4>
           <em>
             „Egység, kör, több szólam, ritmus, összhang, figyelem, mélység, lágy

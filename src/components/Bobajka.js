@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import Social from './SocialLinks';
+import LogoContainer from '../styles/LogoContainer';
 
 export default function Bobajka() {
   const data = useStaticQuery(graphql`
@@ -29,13 +30,12 @@ export default function Bobajka() {
   return (
     <>
       <ContainerStyles>
-        <div>
+        <LogoContainer>
           <Img
             fluid={data.logo.childImageSharp.fluid}
             alt="Bobájka bölcsi logo"
-            style={{ width: 320, display: 'block', margin: '5rem auto' }}
           />
-        </div>
+        </LogoContainer>
         <TextBox>
           <div>
             <p>

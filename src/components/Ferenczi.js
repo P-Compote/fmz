@@ -5,6 +5,7 @@ import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedYoutube from './EmbedYoutube';
 import Social from './SocialLinks';
+import LogoContainer from '../styles/LogoContainer';
 
 export default function Ferenczi() {
   const data = useStaticQuery(graphql`
@@ -30,13 +31,12 @@ export default function Ferenczi() {
   return (
     <>
       <ContainerStyles>
-        <div>
+        <LogoContainer>
           <Img
             fluid={data.ferencziLogo.childImageSharp.fluid}
             alt="Ferenczi György és az 1ső pesti rackák logo"
-            style={{ width: 320, display: 'block', margin: '5rem auto' }}
           />
-        </div>
+        </LogoContainer>
         <h4>
           <em>
             „A XXI. századi városi népzene és a hagyományos műfajok meglepő és
