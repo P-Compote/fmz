@@ -4,6 +4,7 @@ import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import ContainerStyles from '../styles/ContainerStyles';
 import SEO from '../components/SEO';
+import breakpoint from '../utils/breakpoints';
 
 export const TextBox = styled.div`
   display: grid;
@@ -15,14 +16,14 @@ export const TextBox = styled.div`
   p {
     text-align: justify;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and ${breakpoint.device.md} {
     grid-template-columns: 1fr;
     gap: 0rem;
     div {
       text-indent: 0;
     }
     p {
-      /* text-align: left; */
+      text-align: left;
       margin: 0;
       margin-bottom: 2.5rem;
       font-size: 2rem;
@@ -47,7 +48,7 @@ export const OverlayText = styled.div`
   border-top-right-radius: 3px;
   transition: all 0.2s ease-in-out;
   font-size: 1.7rem;
-  @media screen and (max-width: 768px) {
+  @media screen and ${breakpoint.device.md} {
     width: 80%;
     left: 10%;
     font-size: 1.4rem;
@@ -132,8 +133,8 @@ export default function Home({ data }) {
           <strong>További információért keressen minket:</strong>
         </h3>
         <h3>
-          <a href="mailto:hello@fmz.ngo" target="_blank" rel="noreferrer">
-            hello@fmz.ngo
+          <a href="mailto:info@fmz.ngo" target="_blank" rel="noreferrer">
+            info@fmz.ngo
           </a>
         </h3>
         <h2>Egyesületünk fő tevékenységei</h2>

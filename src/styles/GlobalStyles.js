@@ -9,6 +9,10 @@ const GlobalStyles = createGlobalStyle`
     --grey: #efefef;
     --blue: #2980b9;
     --footer: #34495e;
+    --spotify: #1db954;
+    --facebook: #3b5998;
+    --youtube: #ff0000;
+    --instagram: #dd2a7b;
     --container: 1080px;
   }
   

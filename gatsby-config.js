@@ -10,10 +10,15 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `@slixites/gatsby-plugin-google-fonts`,
       options: {
         fonts: [`poppins\:300,400,400i,500,600,700`],
         display: 'swap',
+        preconnect: true,
+        attributes: {
+          rel: 'stylesheet preload prefetch',
+          as: 'style',
+        },
       },
     },
     {

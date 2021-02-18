@@ -6,6 +6,8 @@ import ContainerStyles from '../styles/ContainerStyles';
 
 const NavStyles = styled.nav`
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
   padding: 2% 0;
   display: flex;
   ul {

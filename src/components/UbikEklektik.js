@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedFacebook from './EmbedFacebook';
+import LogoContainer from '../styles/LogoContainer';
 
 export default function UbikEklektik() {
   const data = useStaticQuery(graphql`
@@ -31,13 +32,12 @@ export default function UbikEklektik() {
   return (
     <>
       <ContainerStyles>
-        <div>
+        <LogoContainer>
           <Img
             fluid={data.ubikEklektikLogo.childImageSharp.fluid}
             alt="ubikEklektik"
-            style={{ width: 250, display: 'block', margin: '5rem auto' }}
           />
-        </div>
+        </LogoContainer>
         <h3>
           <em>
             „megkoronázva a nyarat, hogy eljöve közénk és leüle tüzünkhöz…”
