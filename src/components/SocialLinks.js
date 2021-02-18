@@ -5,6 +5,7 @@ import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaSpotify } from 'react-icons/fa';
 import { FaFacebookSquare } from 'react-icons/fa';
+import breakpoint from '../utils/breakpoints';
 
 const SocialContainer = styled.div`
   margin: 6rem auto;
@@ -25,20 +26,20 @@ const SocialContainer = styled.div`
     transition: all 0.2s ease-in-out;
   }
   .spotify {
-    fill: #1db954;
+    fill: var(--spotify);
   }
 
   .insta {
-    fill: #dd2a7b;
+    fill: var(--instagram);
   }
   .youtube {
-    fill: #ff0000;
+    fill: var(--youtube);
   }
   .www {
     fill: #282828;
   }
   .facebook {
-    fill: #3b5998;
+    fill: var(--facebook);
   }
 
   .spotify:hover,
@@ -65,7 +66,7 @@ const SocialContainer = styled.div`
   .facebook:hover {
     fill: #4c70ba;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and ${breakpoint.device.md} {
     grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
     max-width: 90%;
     margin: 4rem auto;

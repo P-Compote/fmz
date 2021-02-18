@@ -60,8 +60,8 @@ export default function Oktatas({ data }) {
           <strong>További információért keressen minket:</strong>
         </h3>
         <h3>
-          <a href="mailto:workshop@fmz.ngo" target="_blank" rel="noreferrer">
-            workshop@fmz.ngo
+          <a href="mailto:info@fmz.ngo" target="_blank" rel="noreferrer">
+            info@fmz.ngo
           </a>
         </h3>
       </ContainerStyles>

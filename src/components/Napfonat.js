@@ -11,7 +11,7 @@ import LogoContainer from '../styles/LogoContainer';
 export default function Napfonat() {
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "napfonat_color_solo_transparent.png" }) {
+      logo: file(relativePath: { eq: "napfonat_color_transparent.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200, quality: 70) {
             ...GatsbyImageSharpFluid_withWebp
@@ -33,7 +33,6 @@ export default function Napfonat() {
       <ContainerStyles>
         <LogoContainer>
           <Img fluid={data.logo.childImageSharp.fluid} alt="Napfonat logo" />
-          <h2>Napfonat</h2>
         </LogoContainer>
         <h4>
           <em>

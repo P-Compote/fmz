@@ -50,7 +50,7 @@ export default function Mordai() {
           <div>
             <p>
               A zenekar elismert magyar népzenei és szabadzenei körökből jött
-              létre, élen a számom sikeres projektben közreműködő Nové Soma
+              létre, élen a számos sikeres projektben közreműködő Nové Soma
               énekessel. A füstös, balladai homály átjárja a koncertet, amely
               kétségen kívül egyedülálló színfolt a magyar világzene palettáján.{' '}
             </p>

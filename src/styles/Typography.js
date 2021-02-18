@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import breakpoint from '../utils/breakpoints';
 
 const Typography = createGlobalStyle`
   html {
@@ -50,7 +51,7 @@ const Typography = createGlobalStyle`
     text-decoration: underline;
     text-decoration-color: var(--blue);
   }
-  @media screen and (max-width: 768px) {
+  @media screen and ${breakpoint.device.md} {
     html{
       font-size: 8px;
     }
@@ -59,7 +60,10 @@ const Typography = createGlobalStyle`
     }
     h2 {
     font-size: 3rem;
-  }
+    }
+    h3 {
+    font-size: 2rem;
+    }
   }
 `;
 

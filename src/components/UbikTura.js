@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedFacebook from './EmbedFacebook';
+import LogoContainer from '../styles/LogoContainer';
 
 export default function UbikTura() {
   const data = useStaticQuery(graphql`
@@ -29,13 +30,9 @@ export default function UbikTura() {
   return (
     <>
       <ContainerStyles>
-        <div>
-          <Img
-            fluid={data.ubikTuraLogo.childImageSharp.fluid}
-            alt="ubikTúra"
-            style={{ width: 199, display: 'block', margin: '5rem auto' }}
-          />
-        </div>
+        <LogoContainer>
+          <Img fluid={data.ubikTuraLogo.childImageSharp.fluid} alt="ubikTúra" />
+        </LogoContainer>
         <h3>
           <em>
             "...minek titok? csakis ti-ták!" /Ubiciták, Felkiáltások könyve 19./

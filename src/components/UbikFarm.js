@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
 import EmbedFacebook from './EmbedFacebook';
+import LogoContainer from '../styles/LogoContainer';
 
 export default function UbikFarm() {
   const data = useStaticQuery(graphql`
@@ -29,13 +30,9 @@ export default function UbikFarm() {
   return (
     <>
       <ContainerStyles>
-        <div>
-          <Img
-            fluid={data.ubikFarmLogo.childImageSharp.fluid}
-            alt="UbikFarm"
-            style={{ width: 199, display: 'block', margin: '5rem auto' }}
-          />
-        </div>
+        <LogoContainer>
+          <Img fluid={data.ubikFarmLogo.childImageSharp.fluid} alt="UbikFarm" />
+        </LogoContainer>
         <h3>
           <em>
             „Csended tojás. Ahhoz, hogy felbontása közben egyetlen, fontos
