@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from './Nav';
+import NavBar from './NavBar';
 import Footer from './Footer';
 import 'normalize.css';
 import GlobalStyles from '../styles/GlobalStyles';
@@ -10,7 +10,7 @@ export default function Layout({ children }) {
     <>
       <GlobalStyles />
       <Typography />
-      <Nav />
+      <NavBar />
       {children}
       <Footer />
     </>

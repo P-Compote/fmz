@@ -7,7 +7,7 @@ const ContainerStyles = styled.div`
   @media screen and ${breakpoint.device.xl} {
     margin-left: 2rem;
     margin-right: 2rem;
-  } ;
+  }
 `;
 
 export default ContainerStyles;

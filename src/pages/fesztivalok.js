@@ -26,8 +26,8 @@ export default function Fesztivalok({ data }) {
           alt="fesztiválok"
         />
       </div>
-      <h1>Fesztiválok</h1>
       <ContainerStyles>
+        <h1>Fesztiválok</h1>
         <TextBox>
           <div>
             <p>
@@ -110,9 +110,8 @@ export default function Fesztivalok({ data }) {
             <OverlayText>UbikFarm</OverlayText>
           </div>
         </ImageLinkContainer>
-        <div id="reszletek" style={{ marginTop: '-1.4rem' }} />
       </div>
-      <div style={{ marginTop: '8rem' }}>
+      <div id="reszletek" style={{ paddingTop: '1rem' }}>
         {fest === 'ubiktura' && <UbikTura />}
         {fest === 'ubikeklektik' && <UbikEklektik />}
         {fest === 'ubikfarm' && <UbikFarm />}

@@ -56,10 +56,12 @@ const Typography = createGlobalStyle`
       font-size: 8px;
     }
     h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
+      text-align: left;
     }
     h2 {
-    font-size: 3rem;
+      font-size: 2.5rem;
+      text-align: left;
     }
     h3 {
     font-size: 2rem;
