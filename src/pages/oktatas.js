@@ -23,8 +23,8 @@ export default function Oktatas({ data }) {
       <div>
         <Img fluid={data.oktatasHero.childImageSharp.fluid} />
       </div>
-      <h1>Oktatás</h1>
       <ContainerStyles>
+        <h1>Oktatás</h1>
         <TextBox>
           <div>
             <p>
@@ -108,9 +108,8 @@ export default function Oktatas({ data }) {
             <OverlayText>Közösségi dalírás</OverlayText>
           </div>
         </ImageLinkContainer>
-        <div id="reszletek" style={{ marginTop: '-1.4rem' }} />
       </div>
-      <div style={{ marginTop: '8rem' }}>
+      <div id="reszletek" style={{ paddingTop: '2rem' }}>
         {oktatas === 'bobajka' && <Bobajka />}
         {oktatas === 'digital' && <Digital />}
         {oktatas === 'kozossegi' && <Kozossegi />}

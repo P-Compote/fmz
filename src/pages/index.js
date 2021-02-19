@@ -23,10 +23,9 @@ export const TextBox = styled.div`
       text-indent: 0;
     }
     p {
-      text-align: left;
       margin: 0;
       margin-bottom: 2.5rem;
-      font-size: 2rem;
+      font-size: 1.9rem;
       line-height: 1.9;
     }
   } ;
@@ -87,8 +86,8 @@ export default function Home({ data }) {
       <div>
         <Img fluid={data.hero.childImageSharp.fluid} />
       </div>
-      <h1>Az egyesületről</h1>
       <ContainerStyles>
+        <h1>Az egyesületről</h1>
         <TextBox>
           <div>
             <p>

@@ -26,8 +26,8 @@ export default function Zenekarok({ data }) {
       <div>
         <Img fluid={data.zenekarokHero.childImageSharp.fluid} />
       </div>
-      <h1>Zenekarok</h1>
       <ContainerStyles>
+        <h1>Zenekarok</h1>
         <LogoContainer>
           <Img
             fluid={data.gallusLogo.childImageSharp.fluid}
@@ -143,9 +143,8 @@ export default function Zenekarok({ data }) {
             <OverlayText>Mordái</OverlayText>
           </div>
         </ImageLinkContainer>
-        <div id="reszletek" style={{ marginTop: '-1.4rem' }} />
       </div>
-      <div style={{ marginTop: '8rem' }}>
+      <div id="reszletek" style={{ paddingTop: '1rem' }}>
         {zenekar === 'ferenczi' && <Ferenczi />}
         {zenekar === 'parno' && <ParnoGraszt />}
         {zenekar === 'betyars' && <Betyars />}

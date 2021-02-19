@@ -34,6 +34,7 @@ const ThinkaholistsFooterStyles = styled.footer`
 
 const FooterStyles = styled.div`
   border-top: 5px solid var(--black);
+  background-color: #fff;
   padding: 5rem 0 0 0;
   display: grid;
   margin-top: 8rem;
@@ -77,7 +78,7 @@ export default function Footer() {
           }
         }
       }
-      ubikTuraLogo: file(relativePath: { eq: "ubiktura-logo.jpg" }) {
+      ubikTuraLogo: file(relativePath: { eq: "ubiktura-logo-footer.png" }) {
         childImageSharp {
           fluid(maxWidth: 350) {
             ...GatsbyImageSharpFluid_withWebp_noBase64
