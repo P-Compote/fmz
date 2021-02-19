@@ -7,7 +7,8 @@ import breakpoint from '../utils/breakpoints';
 const ThinkaholistsFooterStyles = styled.footer`
   background-color: var(--footer);
   color: var(--white);
-  padding: 1.5rem 0;
+  padding: 1.5rem 3rem;
+  text-align: center;
   p {
     margin: 0;
     font-size: 1.5rem;
@@ -33,49 +34,37 @@ const ThinkaholistsFooterStyles = styled.footer`
 
 const FooterStyles = styled.div`
   border-top: 5px solid var(--black);
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
   display: grid;
-  place-items: center;
   margin-top: 8rem;
 `;
 
 const FooterLogo = styled.div`
   width: 320px;
-  margin-top: -11.1rem;
+  margin-top: -10rem;
   z-index: 1000;
   background-color: var(--white);
   margin-right: 3rem;
   margin-left: 3rem;
+  justify-self: center;
   @media screen and ${breakpoint.device.md} {
     width: 200px;
+    margin-top: -9rem;
   } ;
 `;
 
 const LogoContainer = styled.div`
-  width: 160px;
-  height: auto;
-  img {
-    display: block;
-  }
-  @media screen and (max-width: 768px) {
-    width: 130px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const AllLogoContainer = styled.div`
+  margin: 4rem 0;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  place-items: center;
-  padding: 5rem 0.5;
-  margin: 5rem 0;
   gap: 1rem;
-  @media screen and (max-width: 1280px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: space-between;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  padding: 3rem;
 `;
 
 export default function Footer() {
@@ -163,7 +152,10 @@ export default function Footer() {
             />
           </LogoContainer>
           <LogoContainer>
-            <Img fluid={data.gallusLogo.childImageSharp.fluid} alt="FMZ logo" />
+            <Img
+              fluid={data.gallusLogo.childImageSharp.fluid}
+              alt="Gallus Hirundo logo"
+            />
           </LogoContainer>
           <LogoContainer>
             <Img
@@ -172,19 +164,22 @@ export default function Footer() {
             />
           </LogoContainer>
           <LogoContainer>
-            <Img fluid={data.azvlmLogo.childImageSharp.fluid} alt="FMZ logo" />
+            <Img
+              fluid={data.azvlmLogo.childImageSharp.fluid}
+              alt="AZVLM logo"
+            />
           </LogoContainer>
           <LogoContainer>
-            <Img fluid={data.mmaLogo.childImageSharp.fluid} alt="FMZ logo" />
+            <Img fluid={data.mmaLogo.childImageSharp.fluid} alt="MMA logo" />
           </LogoContainer>
           <LogoContainer>
-            <Img fluid={data.mtuLogo.childImageSharp.fluid} alt="FMZ logo" />
+            <Img fluid={data.mtuLogo.childImageSharp.fluid} alt="MTU logo" />
           </LogoContainer>
           <LogoContainer>
-            <Img fluid={data.nkaLogo.childImageSharp.fluid} alt="FMZ logo" />
+            <Img fluid={data.nkaLogo.childImageSharp.fluid} alt="NKA logo" />
           </LogoContainer>
           <LogoContainer>
-            <Img fluid={data.neaLogo.childImageSharp.fluid} alt="FMZ logo" />
+            <Img fluid={data.neaLogo.childImageSharp.fluid} alt="NEA logo" />
           </LogoContainer>
         </AllLogoContainer>
       </FooterStyles>
