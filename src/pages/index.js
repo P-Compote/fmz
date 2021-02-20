@@ -23,6 +23,7 @@ export const TextBox = styled.div`
       text-indent: 0;
     }
     p {
+      font-family: Roboto;
       margin: 0;
       margin-bottom: 2.5rem;
       font-size: 1.9rem;
