@@ -23,17 +23,19 @@ export const TextBox = styled.div`
       text-indent: 0;
     }
     p {
-      font-family: Roboto;
+      text-align: left;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       margin: 0;
       margin-bottom: 2.5rem;
-      font-size: 1.9rem;
-      line-height: 1.9;
+      font-size: 2rem;
+      line-height: 1.625;
     }
   } ;
 `;
 
 export const OverlayText = styled.div`
-  width: 40%;
+  width: 50%;
   position: absolute;
   padding: 5px;
   background: rgba(255, 255, 255, 0.6);
@@ -41,7 +43,7 @@ export const OverlayText = styled.div`
   text-transform: uppercase;
   letter-spacing: 1px;
   bottom: 0;
-  left: 30%;
+  left: 25%;
   z-index: 1000;
   text-align: center;
   border-top-left-radius: 3px;
@@ -58,24 +60,26 @@ export const OverlayText = styled.div`
 
 export const ImageLinkContainer = styled.div`
   position: relative;
-  picture {
-    opacity: 0.7;
-    /* img {
-      filter: blur(2px) grayscale(80%);
-    } */
+
+  div {
+    font-weight: 500;
     transition: all 0.2s ease-in-out;
   }
+
   &:hover {
     cursor: pointer;
-    picture {
-      /* img {
-        filter: blur(0) grayscale(0%);
-      } */
-      opacity: 1;
-    }
     div {
       letter-spacing: 1px;
+      font-size: 2.5rem;
+      font-weight: 600;
       background: rgba(255, 255, 255, 1);
+    }
+  }
+  @media screen and ${breakpoint.device.md} {
+    &:hover {
+      div {
+        font-size: 1.9rem;
+      }
     }
   }
 `;
@@ -179,6 +183,13 @@ export const query = graphql`
         }
       }
     }
+    # fesztMobile: file(relativePath: { eq: "43-fesztivalok.jpg" }) {
+    #   childImageSharp {
+    #     fluid(maxWidth: 800, quality: 70) {
+    #       ...GatsbyImageSharpFluid_withWebp
+    #     }
+    #   }
+    # }
     zenekar: file(relativePath: { eq: "FMZ-mainpageArtboard-zenekarok.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
@@ -186,6 +197,13 @@ export const query = graphql`
         }
       }
     }
+    # zenekarMobile: file(relativePath: { eq: "43-zenekarok.jpg" }) {
+    #   childImageSharp {
+    #     fluid(maxWidth: 800, quality: 70) {
+    #       ...GatsbyImageSharpFluid_withWebp
+    #     }
+    #   }
+    # }
     oktatas: file(relativePath: { eq: "FMZ-subpage-big-javArtboard-9.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
@@ -193,5 +211,12 @@ export const query = graphql`
         }
       }
     }
+    # oktatasMobile: file(relativePath: { eq: "43-oktatas.jpg" }) {
+    #   childImageSharp {
+    #     fluid(maxWidth: 800, quality: 70) {
+    #       ...GatsbyImageSharpFluid_withWebp
+    #     }
+    #   }
+    # }
   }
 `;

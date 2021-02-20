@@ -38,6 +38,9 @@ const FooterStyles = styled.div`
   padding: 5rem 0 0 0;
   display: grid;
   margin-top: 8rem;
+  @media screen and ${breakpoint.device.md} {
+    padding: 2rem 0 0 0;
+  } ;
 `;
 
 const FooterLogo = styled.div`
@@ -50,7 +53,7 @@ const FooterLogo = styled.div`
   justify-self: center;
   @media screen and ${breakpoint.device.md} {
     width: 200px;
-    margin-top: -9rem;
+    margin-top: -6rem;
   } ;
 `;
 
@@ -66,6 +69,9 @@ const AllLogoContainer = styled.div`
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   padding: 3rem;
+  @media screen and ${breakpoint.device.md} {
+    margin: 2rem 0;
+  } ;
 `;
 
 export default function Footer() {

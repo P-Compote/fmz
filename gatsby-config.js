@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: `@slixites/gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`poppins\:300,400,400i,500,600,700`, `roboto`],
+        fonts: [`poppins\:300,400,400i,500,600,700`],
         display: 'swap',
         preconnect: true,
         attributes: {

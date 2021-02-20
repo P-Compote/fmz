@@ -11,9 +11,11 @@ import Napfonat from '../components/Napfonat';
 import Mordai from '../components/Mordai';
 import SEO from '../components/SEO';
 import LogoContainer from '../styles/LogoContainer';
+import { useWindowSize } from '../utils/useWindowSize';
 
 export default function Zenekarok({ data }) {
   const [zenekar, setZenekar] = useState('');
+  const size = useWindowSize();
 
   const revealZenekar = async band => {
     await setZenekar(band);
@@ -28,7 +30,7 @@ export default function Zenekarok({ data }) {
       </div>
       <ContainerStyles>
         <h1>Zenekarok</h1>
-        <LogoContainer>
+        <LogoContainer style={size.width < 768 ? { margin: '4rem 0' } : null}>
           <Img
             fluid={data.gallusLogo.childImageSharp.fluid}
             alt="gallus hirundo logo"
@@ -93,7 +95,7 @@ export default function Zenekarok({ data }) {
               fluid={data.ferenczi.childImageSharp.fluid}
               alt="Ferenczi György és az 1ső pesti rackák"
             />
-            <OverlayText>Ferenczi György és az 1ső pesti rackák</OverlayText>
+            <OverlayText>Ferenczi György és az 1ső pesti rackák </OverlayText>
           </div>
         </ImageLinkContainer>
         <ImageLinkContainer>
