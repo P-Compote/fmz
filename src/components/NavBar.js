@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 import { CgMenuRightAlt, CgClose } from 'react-icons/cg';
 import breakpoint from '../utils/breakpoints';
 import MobileMenu from './MobileMenu';
 import { menuItems } from '../menuItems';
 import { useWindowSize } from '../utils/useWindowSize';
+import Logo from '../components/Logo';
 
 const NavBarStyles = styled.nav`
   background-color: var(--white);
-  overflow-x: hidden;
-  padding: 2rem 0;
+  overflow: hidden;
+  padding: 0rem 0;
   a {
     color: inherit;
   }
@@ -94,17 +95,17 @@ export default function NavBar() {
     setOpen(!open);
   };
 
-  const data = useStaticQuery(graphql`
-    query {
-      logo: file(relativePath: { eq: "FMZ_logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800, quality: 70) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     logo: file(relativePath: { eq: "FMZ_logo.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 800, quality: 70) {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
   return (
     <>
@@ -113,7 +114,8 @@ export default function NavBar() {
           <div className="logo">
             <LogoContainer>
               <Link to="/" onClick={() => setOpen(false)}>
-                <Img fluid={data.logo.childImageSharp.fluid} alt="FMZ logo" />
+                {/* <Img fluid={data.logo.childImageSharp.fluid} alt="FMZ logo" /> */}
+                <Logo />
               </Link>
             </LogoContainer>
           </div>
