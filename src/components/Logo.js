@@ -2,47 +2,42 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LogoStyles = styled.div`
-  /* font-family: 'Poppins'; */
+  font-family: 'Mediaan';
+  font-size: 6px;
+  font-size: clamp(6px, 0.75vw, 8px);
+  width: 35em;
+  height: 16em;
+  /* border: 1px solid rebeccapurple; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  text-align: left;
+  align-items: center;
+  color: var(--black);
   h1 {
-    text-align: left;
-  }
-  p,
-  h1,
-  h5 {
     margin: 0;
     padding: 0;
-    line-height: 1;
+    font-weight: 300;
+    text-align: left;
+    font-size: 8em;
+    margin-top: 0.24em;
   }
-  h1 {
-    font-size: 6rem;
-  }
-  h5 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin-left: 0.5%;
-  }
-  .left p {
-    text-align: right;
-    margin-top: 0.5rem;
-    line-height: 1.1;
+  p {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+    line-height: 1.2;
+    font-weight: 400;
   }
 `;
 
 export default function Logo() {
   return (
     <LogoStyles className="logo">
-      <div className="left">
+      <h1>FMZ</h1>
+      <div>
         <p>Fiatalok a</p>
-        <p>Magyar</p>
-        <p>Zenéért</p>
-      </div>
-      <div className="right">
-        <h1>FMZ</h1>
-        <h5>egyesület</h5>
+        <p>Magyar Zenéért</p>
+        <p>Egyesület</p>
       </div>
     </LogoStyles>
   );

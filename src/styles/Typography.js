@@ -1,7 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 import breakpoint from '../utils/breakpoints';
 
+import font from '../assets/fonts/Mediaan-Regular.otf';
+
 const Typography = createGlobalStyle`
+  @font-face {
+    font-family: Mediaan;
+    src: url(${font});
+  }
+
   html {
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);

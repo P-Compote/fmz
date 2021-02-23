@@ -7,11 +7,12 @@ import breakpoint from '../utils/breakpoints';
 import MobileMenu from './MobileMenu';
 import { menuItems } from '../menuItems';
 import { useWindowSize } from '../utils/useWindowSize';
+import Logo from '../components/Logo';
 
 const NavBarStyles = styled.nav`
   background-color: var(--white);
-  overflow-x: hidden;
-  padding: 2rem 0;
+  overflow: hidden;
+  padding: 0rem 0;
   a {
     color: inherit;
   }
@@ -113,7 +114,8 @@ export default function NavBar() {
           <div className="logo">
             <LogoContainer>
               <Link to="/" onClick={() => setOpen(false)}>
-                <Img fluid={data.logo.childImageSharp.fluid} alt="FMZ logo" />
+                {/* <Img fluid={data.logo.childImageSharp.fluid} alt="FMZ logo" /> */}
+                <Logo />
               </Link>
             </LogoContainer>
           </div>

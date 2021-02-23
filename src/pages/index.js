@@ -24,11 +24,12 @@ export const TextBox = styled.div`
     }
     p {
       text-align: left;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
       margin: 0;
       margin-bottom: 2.5rem;
-      font-size: 2rem;
+      font-size: 2.2rem;
       line-height: 1.625;
     }
   } ;
