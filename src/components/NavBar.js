@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 import { CgMenuRightAlt, CgClose } from 'react-icons/cg';
 import breakpoint from '../utils/breakpoints';
 import MobileMenu from './MobileMenu';
@@ -95,17 +95,17 @@ export default function NavBar() {
     setOpen(!open);
   };
 
-  const data = useStaticQuery(graphql`
-    query {
-      logo: file(relativePath: { eq: "FMZ_logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800, quality: 70) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     logo: file(relativePath: { eq: "FMZ_logo.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 800, quality: 70) {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
   return (
     <>
