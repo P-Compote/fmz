@@ -67,8 +67,12 @@ export default function UbikFarm() {
           <strong>További információért keressen minket:</strong>
         </h3>
         <h3>
-          <a href="mailto:ubikfarm@gmail.com" target="_blank" rel="noreferrer">
-            ubikfarm@gmail.com
+          <a
+            href="mailto:info@ubikekletik.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            info@ubikekletik.com
           </a>
         </h3>
         <EmbedFacebook videoId="159796498241310" fbPage="ubikeklektik" />

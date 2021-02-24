@@ -24,12 +24,12 @@ export const TextBox = styled.div`
     }
     p {
       text-align: left;
-      font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-        sans-serif;
+      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
       margin: 0;
       margin-bottom: 2.5rem;
-      font-size: 2.2rem;
+      font-size: 2.1rem;
       line-height: 1.625;
     }
   } ;
@@ -52,10 +52,17 @@ export const OverlayText = styled.div`
   transition: all 0.2s ease-in-out;
   font-size: 1.7rem;
   @media screen and ${breakpoint.device.md} {
+    background: rgba(255, 255, 255, 0.9);
     width: 80%;
     left: 10%;
     font-size: 1.4rem;
     padding: 2px;
+    &::after {
+      content: ' ->';
+    }
+    &:hover::after {
+      content: '';
+    }
   } ;
 `;
 

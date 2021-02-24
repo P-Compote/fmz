@@ -5,8 +5,8 @@ const ContainerStyles = styled.div`
   max-width: var(--container);
   margin: 0 auto;
   @media screen and ${breakpoint.device.xl} {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
   }
 `;
 

@@ -12,7 +12,11 @@ module.exports = {
     {
       resolve: `@slixites/gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`poppins\:300,400,400i,500,600,700`, `Karla\:400,700`],
+        fonts: [
+          `poppins\:300,400,400i,500,600,700`,
+          `IBM Plex Sans\:400,700`,
+          `Karla`,
+        ],
         display: 'swap',
         preconnect: true,
         attributes: {

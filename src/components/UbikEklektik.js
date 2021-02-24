@@ -67,8 +67,12 @@ export default function UbikEklektik() {
           <strong>További információért keressen minket:</strong>
         </h3>
         <h3>
-          <a href="https://ubikeklektik.com" target="_blank" rel="noreferrer">
-            ubikeklektik.com
+          <a
+            href="mailto:info@ubikekletik.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            info@ubikekletik.com
           </a>
         </h3>
         <EmbedFacebook videoId="733726573631699" fbPage="ubikeklektik" />

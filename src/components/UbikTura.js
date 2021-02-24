@@ -74,8 +74,8 @@ export default function UbikTura() {
           <strong>További információért keressen minket:</strong>
         </h3>
         <h3>
-          <a href="mailto:ubiktura@gmail.com" target="_blank" rel="noreferrer">
-            ubiktura@gmail.com
+          <a href="mailto:info@fmz.ngo" target="_blank" rel="noreferrer">
+            info@fmz.ngo
           </a>
         </h3>
         <EmbedFacebook videoId="1611397285708425" fbPage="ubikeklektik" />
