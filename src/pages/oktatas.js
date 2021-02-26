@@ -8,9 +8,11 @@ import Bobajka from '../components/Bobajka';
 import Digital from '../components/Digital';
 import Kozossegi from '../components/Kozossegi';
 import SEO from '../components/SEO';
+import { useWindowSize } from '../utils/useWindowSize';
 
 export default function Oktatas({ data }) {
   const [oktatas, setOktatas] = useState('');
+  const size = useWindowSize();
 
   const revealOktatas = async oktatas => {
     await setOktatas(oktatas);
@@ -74,7 +76,10 @@ export default function Oktatas({ data }) {
             style={{ outline: 'none' }}
           >
             <Img
-              fluid={data.bobajka.childImageSharp.fluid}
+              fluid={
+                data[`bobajka${size.width < 768 ? `Mobile` : ``}`]
+                  .childImageSharp.fluid
+              }
               alt="Bobájka bölcsi"
             />
             <OverlayText>Bobájka Bölcsi</OverlayText>
@@ -88,7 +93,10 @@ export default function Oktatas({ data }) {
             style={{ outline: 'none' }}
           >
             <Img
-              fluid={data.digital.childImageSharp.fluid}
+              fluid={
+                data[`digital${size.width < 768 ? `Mobile` : ``}`]
+                  .childImageSharp.fluid
+              }
               alt="Bobájka bölcsi"
             />
             <OverlayText>Digitális készségfejlesztés</OverlayText>
@@ -102,7 +110,10 @@ export default function Oktatas({ data }) {
             style={{ outline: 'none' }}
           >
             <Img
-              fluid={data.kozossegi.childImageSharp.fluid}
+              fluid={
+                data[`kozossegi${size.width < 768 ? `Mobile` : ``}`]
+                  .childImageSharp.fluid
+              }
               alt="Bobájka bölcsi"
             />
             <OverlayText>Közösségi dalírás</OverlayText>
@@ -144,6 +155,33 @@ export const query = graphql`
     kozossegi: file(relativePath: { eq: "FMZ-subpageArtboard-kozossegi.png" }) {
       childImageSharp {
         fluid(maxWidth: 1200, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    bobajkaMobile: file(
+      relativePath: { eq: "FMZ-subpage-Artboard-bobajka_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    digitalMobile: file(
+      relativePath: { eq: "FMZ-subpageArtboard-digital_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    kozossegiMobile: file(
+      relativePath: { eq: "FMZ-subpageArtboard-kozossegi_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

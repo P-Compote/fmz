@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2418" height="666" viewBox="0 0 2418 666">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 100.648px;
+        font-family: Poppins;
+      }
+
+      .cls-2 {
+        font-size: 73.145px;
+        font-family: Mediaan;
+      }
+    </style>
+  </defs>
+  <text id="Fiatalok_a_Magyar_Zenéért_Egyesület" data-name="Fiatalok a Magyar Zenéért Egyesület" class="cls-1" transform="translate(1340.348 246.386) scale(1.232)">Fiatalok a<tspan x="0" dy="120.778">Magyar Zenéért</tspan><tspan x="0" dy="120.778">Egyesület</tspan></text>
+  <text id="FMZ" class="cls-2" transform="matrix(7.929, 0, 0, 7.929, 78.92, 544.009)">FMZ</text>
+</svg>

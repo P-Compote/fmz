@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { Link, graphql, useStaticQuery } from 'gatsby';
-// import Img from 'gatsby-image';
+import { Link } from 'gatsby';
 import { CgMenuRightAlt, CgClose } from 'react-icons/cg';
 import breakpoint from '../utils/breakpoints';
 import MobileMenu from './MobileMenu';
 import { menuItems } from '../menuItems';
 import { useWindowSize } from '../utils/useWindowSize';
-import Logo from '../components/Logo';
+// import Logo from '../components/Logo';
+import svgLogo from '../assets/images/FMZ_logo.svg';
 
 const NavBarStyles = styled.nav`
   background-color: var(--white);
   overflow: hidden;
-  padding: 0rem 0;
+  // padding-top: 1rem;
   a {
     color: inherit;
   }
@@ -78,7 +78,7 @@ const HamburgerStyles = styled.div`
 `;
 
 const LogoContainer = styled.div`
-  width: 26rem;
+  width: 28rem;
 `;
 
 export default function NavBar() {
@@ -95,18 +95,6 @@ export default function NavBar() {
     setOpen(!open);
   };
 
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     logo: file(relativePath: { eq: "FMZ_logo.png" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 800, quality: 70) {
-  //           ...GatsbyImageSharpFluid_withWebp
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
-
   return (
     <>
       <NavBarStyles>
@@ -114,8 +102,7 @@ export default function NavBar() {
           <div className="logo">
             <LogoContainer>
               <Link to="/" onClick={() => setOpen(false)}>
-                {/* <Img fluid={data.logo.childImageSharp.fluid} alt="FMZ logo" /> */}
-                <Logo />
+                <img src={svgLogo} alt="FMZ logo" />
               </Link>
             </LogoContainer>
           </div>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Fiatalok a Magyar Zenéért`,
-    siteUrl: 'https://fmz.thinkaholists.com',
+    siteUrl: 'https://fmz.ngo',
     description: 'a Fiatalok a Magyar Zenéért Egyesület (FMZ) honlapja.',
   },
 
@@ -12,11 +12,7 @@ module.exports = {
     {
       resolve: `@slixites/gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `poppins\:300,400,400i,500,600,700`,
-          `IBM Plex Sans\:400,700`,
-          `Karla`,
-        ],
+        fonts: [`poppins\:300,400,400i,500,600,700`],
         display: 'swap',
         preconnect: true,
         attributes: {

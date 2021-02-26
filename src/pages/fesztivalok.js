@@ -8,9 +8,11 @@ import UbikTura from '../components/UbikTura';
 import UbikEklektik from '../components/UbikEklektik';
 import UbikFarm from '../components/UbikFarm';
 import SEO from '../components/SEO';
+import { useWindowSize } from '../utils/useWindowSize';
 
 export default function Fesztivalok({ data }) {
   const [fest, setFest] = useState('');
+  const size = useWindowSize();
 
   const revealFestival = async festival => {
     await setFest(festival);
@@ -81,7 +83,10 @@ export default function Fesztivalok({ data }) {
             style={{ outline: 'none' }}
           >
             <Img
-              fluid={data.ubikEklektik.childImageSharp.fluid}
+              fluid={
+                data[`ubikEklektik${size.width < 768 ? `Mobile` : ``}`]
+                  .childImageSharp.fluid
+              }
               alt="ubikEklektik"
             />
             <OverlayText>UbikEklektik</OverlayText>
@@ -94,7 +99,13 @@ export default function Fesztivalok({ data }) {
             tabIndex={0}
             style={{ outline: 'none' }}
           >
-            <Img fluid={data.ubikTura.childImageSharp.fluid} alt="ubikTúra" />
+            <Img
+              fluid={
+                data[`ubikTura${size.width < 768 ? `Mobile` : ``}`]
+                  .childImageSharp.fluid
+              }
+              alt="ubikTúra"
+            />
             <OverlayText>UbikTūra</OverlayText>
           </div>
         </ImageLinkContainer>
@@ -106,7 +117,13 @@ export default function Fesztivalok({ data }) {
             tabIndex={0}
             style={{ outline: 'none' }}
           >
-            <Img fluid={data.ubikFarm.childImageSharp.fluid} alt="ubikFarm" />
+            <Img
+              fluid={
+                data[`ubikFarm${size.width < 768 ? `Mobile` : ``}`]
+                  .childImageSharp.fluid
+              }
+              alt="ubikFarm"
+            />
             <OverlayText>UbikFarm</OverlayText>
           </div>
         </ImageLinkContainer>
@@ -150,6 +167,33 @@ export const query = graphql`
     ubikFarm: file(relativePath: { eq: "FMZ-subpageArtboard-ubikfarm.png" }) {
       childImageSharp {
         fluid(maxWidth: 1200, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    ubikEklektikMobile: file(
+      relativePath: { eq: "FMZ-subpageArtboard-ubikeklektik_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    ubikTuraMobile: file(
+      relativePath: { eq: "FMZ-subpageArtboard-ubiktura_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    ubikFarmMobile: file(
+      relativePath: { eq: "FMZ-subpageArtboard-ubikfarm_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
-import EmbedFacebook from './EmbedFacebook';
+import EmbedYoutube from './EmbedYoutube';
 import LogoContainer from '../styles/LogoContainer';
 
 export default function UbikEklektik() {
@@ -75,7 +75,7 @@ export default function UbikEklektik() {
             info@ubikekletik.com
           </a>
         </h3>
-        <EmbedFacebook videoId="733726573631699" fbPage="ubikeklektik" />
+        <EmbedYoutube videoId="fJJXNCrwVAo" />
       </ContainerStyles>
       <div>
         <Img

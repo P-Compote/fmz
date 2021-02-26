@@ -3,34 +3,8 @@ import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import breakpoint from '../utils/breakpoints';
-
-const ThinkaholistsFooterStyles = styled.footer`
-  background-color: var(--footer);
-  color: var(--white);
-  padding: 1.5rem 3rem;
-  text-align: center;
-  p {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  a {
-    color: var(--white);
-    text-decoration: underline;
-    font-size: 1.4rem;
-    padding: 0 3px;
-  }
-  a:hover {
-    text-decoration: none;
-    background-color: var(--yellow);
-    border-radius: 4px;
-    padding: 0 3px;
-    color: var(--black);
-  }
-  a[href*='gatsby']:hover {
-    background-color: rebeccapurple;
-    color: var(--white);
-  }
-`;
+import svgLogo from '../assets/images/FMZ_logo.svg';
+import { ThinkaholistFooter } from './ThinkaholistFooter';
 
 const FooterStyles = styled.div`
   border-top: 5px solid var(--black);
@@ -77,13 +51,6 @@ const AllLogoContainer = styled.div`
 export default function Footer() {
   const data = useStaticQuery(graphql`
     query {
-      fmzLogo: file(relativePath: { eq: "FMZ_logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 350) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
-          }
-        }
-      }
       ubikTuraLogo: file(relativePath: { eq: "ubiktura-logo-footer.png" }) {
         childImageSharp {
           fluid(maxWidth: 350) {
@@ -149,7 +116,7 @@ export default function Footer() {
     <>
       <FooterStyles>
         <FooterLogo>
-          <Img fluid={data.fmzLogo.childImageSharp.fluid} alt="FMZ logo" />
+          <img src={svgLogo} alt="FMZ logo" />
         </FooterLogo>
         <AllLogoContainer>
           <LogoContainer>
@@ -190,23 +157,7 @@ export default function Footer() {
           </LogoContainer>
         </AllLogoContainer>
       </FooterStyles>
-      <ThinkaholistsFooter />
+      <ThinkaholistFooter />
     </>
   );
 }
-
-const ThinkaholistsFooter = () => (
-  <ThinkaholistsFooterStyles>
-    <p className="center">
-      Ezt az oldalt a{' '}
-      <a href="https://thinkaholists.com" target="_blank" rel="noreferrer">
-        Thinkaholists
-      </a>{' '}
-      csapata készítette{' '}
-      <a href="https://gatsbyjs.com" target="_blank" rel="noreferrer">
-        Gatsby
-      </a>
-      -vel 💜{' '}
-    </p>
-  </ThinkaholistsFooterStyles>
-);

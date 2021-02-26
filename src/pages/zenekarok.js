@@ -92,7 +92,10 @@ export default function Zenekarok({ data }) {
             style={{ outline: 'none' }}
           >
             <Img
-              fluid={data.ferenczi.childImageSharp.fluid}
+              fluid={
+                data[`ferenczi${size.width < 768 ? `Mobile` : ``}`]
+                  .childImageSharp.fluid
+              }
               alt="Ferenczi György és az 1ső pesti rackák"
             />
             <OverlayText>Ferenczi György és az 1ső pesti rackák </OverlayText>
@@ -105,7 +108,13 @@ export default function Zenekarok({ data }) {
             tabIndex={0}
             style={{ outline: 'none' }}
           >
-            <Img fluid={data.parno.childImageSharp.fluid} alt="Parno Graszt" />
+            <Img
+              fluid={
+                data[`parno${size.width < 768 ? `Mobile` : ``}`].childImageSharp
+                  .fluid
+              }
+              alt="Parno Graszt"
+            />
             <OverlayText>Parno Graszt</OverlayText>
           </div>
         </ImageLinkContainer>
@@ -117,7 +126,10 @@ export default function Zenekarok({ data }) {
             style={{ outline: 'none' }}
           >
             <Img
-              fluid={data.betyars.childImageSharp.fluid}
+              fluid={
+                data[`betyars${size.width < 768 ? `Mobile` : ``}`]
+                  .childImageSharp.fluid
+              }
               alt="Bohemian Betyars"
             />
             <OverlayText>Bohemian Betyars</OverlayText>
@@ -130,7 +142,13 @@ export default function Zenekarok({ data }) {
             tabIndex={0}
             style={{ outline: 'none' }}
           >
-            <Img fluid={data.napfonat.childImageSharp.fluid} alt="Napfonat" />
+            <Img
+              fluid={
+                data[`napfonat${size.width < 768 ? `Mobile` : ``}`]
+                  .childImageSharp.fluid
+              }
+              alt="Napfonat"
+            />
             <OverlayText>Napfonat</OverlayText>
           </div>
         </ImageLinkContainer>
@@ -141,7 +159,13 @@ export default function Zenekarok({ data }) {
             tabIndex={0}
             style={{ outline: 'none' }}
           >
-            <Img fluid={data.mordai.childImageSharp.fluid} alt="Mordái" />
+            <Img
+              fluid={
+                data[`mordai${size.width < 768 ? `Mobile` : ``}`]
+                  .childImageSharp.fluid
+              }
+              alt="Mordái"
+            />
             <OverlayText>Mordái</OverlayText>
           </div>
         </ImageLinkContainer>
@@ -208,6 +232,51 @@ export const query = graphql`
     mordai: file(relativePath: { eq: "FMZ-subpageArtboard-mordai.png" }) {
       childImageSharp {
         fluid(maxWidth: 1200, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    ferencziMobile: file(
+      relativePath: { eq: "FMZ-subpageArtboard-ferenczi_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    parnoMobile: file(
+      relativePath: { eq: "FMZ-subpageArtboard-parno_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    betyarsMobile: file(
+      relativePath: { eq: "FMZ-subpageArtboard-betyars_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    napfonatMobile: file(
+      relativePath: { eq: "FMZ-subpageArtboard-napfonat_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    mordaiMobile: file(
+      relativePath: { eq: "FMZ-subpageArtboard-mordai_mobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

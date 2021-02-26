@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { TextBox } from '../pages/index';
 import ContainerStyles from '../styles/ContainerStyles';
-import EmbedFacebook from './EmbedFacebook';
+import EmbedYoutube from './EmbedYoutube';
 import LogoContainer from '../styles/LogoContainer';
 
 export default function UbikTura() {
@@ -78,7 +78,7 @@ export default function UbikTura() {
             info@fmz.ngo
           </a>
         </h3>
-        <EmbedFacebook videoId="1611397285708425" fbPage="ubikeklektik" />
+        <EmbedYoutube videoId="78R0a1KDkeo" />
       </ContainerStyles>
       <div>
         <Img fluid={data.ubikTuraMain.childImageSharp.fluid} alt="UbikTúra" />
