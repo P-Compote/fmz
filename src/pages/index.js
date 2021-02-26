@@ -191,13 +191,6 @@ export const query = graphql`
         }
       }
     }
-    # fesztMobile: file(relativePath: { eq: "43-fesztivalok.jpg" }) {
-    #   childImageSharp {
-    #     fluid(maxWidth: 800, quality: 70) {
-    #       ...GatsbyImageSharpFluid_withWebp
-    #     }
-    #   }
-    # }
     zenekar: file(relativePath: { eq: "FMZ-mainpageArtboard-zenekarok.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
@@ -205,13 +198,6 @@ export const query = graphql`
         }
       }
     }
-    # zenekarMobile: file(relativePath: { eq: "43-zenekarok.jpg" }) {
-    #   childImageSharp {
-    #     fluid(maxWidth: 800, quality: 70) {
-    #       ...GatsbyImageSharpFluid_withWebp
-    #     }
-    #   }
-    # }
     oktatas: file(relativePath: { eq: "FMZ-subpage-big-javArtboard-9.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 70) {
@@ -219,12 +205,5 @@ export const query = graphql`
         }
       }
     }
-    # oktatasMobile: file(relativePath: { eq: "43-oktatas.jpg" }) {
-    #   childImageSharp {
-    #     fluid(maxWidth: 800, quality: 70) {
-    #       ...GatsbyImageSharpFluid_withWebp
-    #     }
-    #   }
-    # }
   }
 `;

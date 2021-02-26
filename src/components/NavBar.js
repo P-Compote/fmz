@@ -12,7 +12,6 @@ import svgLogo from '../assets/images/FMZ_logo.svg';
 const NavBarStyles = styled.nav`
   background-color: var(--white);
   overflow: hidden;
-  // padding-top: 1rem;
   a {
     color: inherit;
   }
