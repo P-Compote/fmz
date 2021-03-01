@@ -95,12 +95,12 @@ export const ImageLinkContainer = styled.div`
 export default function Home({ data }) {
   return (
     <>
-      <SEO title={`Főoldal`} />
+      <SEO title={`Fiatalok a Magyar Zenéért Egyesület`} />
       <div>
         <Img fluid={data.hero.childImageSharp.fluid} />
       </div>
       <ContainerStyles>
-        <h1>Az egyesületről</h1>
+        <h1>Fiatalok a Magyar Zenéért Egyesület</h1>
         <TextBox>
           <div>
             <p>
