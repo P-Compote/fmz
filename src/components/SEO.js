@@ -25,7 +25,7 @@ export default function SEO({ children, location, description, title, image }) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta charSet="utf-8" />
       <meta name="description" content={site.siteMetadata.description} />
-      <link rel="canonical" href="http://fmz.ngo" />
+<link rel="canonical" href={site.siteMetadata.siteUrl} />
       {/* Open Graph */}
       {location && <meta property="og:url" content={location.href} />}
       <meta property="og:image" content={image || '/FMZ_logo.svg'} />
