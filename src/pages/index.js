@@ -100,7 +100,7 @@ export default function Home({ data }) {
         <Img fluid={data.hero.childImageSharp.fluid} />
       </div>
       <ContainerStyles>
-        <h1>Fiatalok a Magyar Zenéért Egyesület</h1>
+        <h1>Az egyesületről</h1>
         <TextBox>
           <div>
             <p>
