@@ -95,7 +95,7 @@ export const ImageLinkContainer = styled.div`
 export default function Home({ data }) {
   return (
     <>
-      <SEO title={`Főoldal`} />
+      <SEO title={`Fiatalok a Magyar Zenéért Egyesület`} />
       <div>
         <Img fluid={data.hero.childImageSharp.fluid} />
       </div>
