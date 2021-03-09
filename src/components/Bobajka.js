@@ -74,7 +74,7 @@ export default function Bobajka() {
           </a>
         </h3>
         <Social
-          web="https://bobajkabolcsi.hu/"
+          web="https://bobajkabolcsi.hu"
           instagram="https://www.instagram.com/bobajkabolcsi/"
           facebook="https://www.facebook.com/bobajkabolcsi"
         />
