@@ -120,40 +120,84 @@ export default function Footer() {
         </FooterLogo>
         <AllLogoContainer>
           <LogoContainer>
-            <Img
-              fluid={data.ubikTuraLogo.childImageSharp.fluid}
-              alt="FMZ logo"
-            />
+            <a
+              href="https://ubikeklektik.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Img
+                fluid={data.ubikTuraLogo.childImageSharp.fluid}
+                alt="Ubiktúra logo"
+              />
+            </a>
           </LogoContainer>
           <LogoContainer>
-            <Img
-              fluid={data.gallusLogo.childImageSharp.fluid}
-              alt="Gallus Hirundo logo"
-            />
+            <a
+              href="https://www.facebook.com/bohemianbetyars/posts/10158130601353823"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Img
+                fluid={data.gallusLogo.childImageSharp.fluid}
+                alt="Gallus Hirundo logo"
+              />
+            </a>
           </LogoContainer>
           <LogoContainer>
-            <Img
-              fluid={data.bobajkaLogo.childImageSharp.fluid}
-              alt="FMZ logo"
-            />
+            <a
+              href="https://bobajkabolcsi.hu"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Img
+                fluid={data.bobajkaLogo.childImageSharp.fluid}
+                alt="Bobájak Bölcsi logo"
+              />
+            </a>
           </LogoContainer>
           <LogoContainer>
-            <Img
-              fluid={data.azvlmLogo.childImageSharp.fluid}
-              alt="AZVLM logo"
-            />
+            <a
+              href="https://www.facebook.com/azvlm"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Img
+                fluid={data.azvlmLogo.childImageSharp.fluid}
+                alt="AZVLM logo"
+              />
+            </a>
           </LogoContainer>
           <LogoContainer>
-            <Img fluid={data.mmaLogo.childImageSharp.fluid} alt="MMA logo" />
+            <a
+              href="https://www.mma.hu"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Img fluid={data.mmaLogo.childImageSharp.fluid} alt="MMA logo" />
+            </a>
           </LogoContainer>
           <LogoContainer>
-            <Img fluid={data.mtuLogo.childImageSharp.fluid} alt="MTU logo" />
+            <a
+              href="https://mtu.gov.hu"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Img fluid={data.mtuLogo.childImageSharp.fluid} alt="MTU logo" />
+            </a>
           </LogoContainer>
           <LogoContainer>
-            <Img fluid={data.nkaLogo.childImageSharp.fluid} alt="NKA logo" />
+            <a href="https://nka.hu" target="_blank" rel="noreferrer noopener">
+              <Img fluid={data.nkaLogo.childImageSharp.fluid} alt="NKA logo" />
+            </a>
           </LogoContainer>
           <LogoContainer>
-            <Img fluid={data.neaLogo.childImageSharp.fluid} alt="NEA logo" />
+            <a
+              href="https://civil.info.hu/nea/kezdolap/bemutatkozas/index.html"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Img fluid={data.neaLogo.childImageSharp.fluid} alt="NEA logo" />
+            </a>
           </LogoContainer>
         </AllLogoContainer>
       </FooterStyles>
