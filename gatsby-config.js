@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Fiatalok a Magyar Zenéért`,
+    title: `Fiatalok a Magyar Zenéért Egyesület`,
     siteUrl: 'https://fmz.ngo',
-    description: 'a Fiatalok a Magyar Zenéért Egyesület (FMZ) honlapja.',
+    description: 'A Fiatalok a Magyar Zenéért Egyesület (FMZ) honlapja.',
   },
 
   plugins: [

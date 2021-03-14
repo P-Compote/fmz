@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 import ContainerStyles from '../styles/ContainerStyles';
 import SEO from '../components/SEO';
 import breakpoint from '../utils/breakpoints';
+import heroImage from '../assets/images/FMZ-fejlecArtboard-main.png';
 
 export const TextBox = styled.div`
   display: grid;
@@ -95,7 +96,7 @@ export const ImageLinkContainer = styled.div`
 export default function Home({ data }) {
   return (
     <>
-      <SEO title={`Fiatalok a Magyar Zenéért Egyesület`} />
+      <SEO image={heroImage} title={`Főoldal`} />
       <div>
         <Img fluid={data.hero.childImageSharp.fluid} />
       </div>
