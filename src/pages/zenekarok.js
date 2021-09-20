@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import ContainerStyles from '../styles/ContainerStyles';
 import { graphql } from 'gatsby';
@@ -12,6 +13,17 @@ import Mordai from '../components/Mordai';
 import SEO from '../components/SEO';
 import LogoContainer from '../styles/LogoContainer';
 import { useWindowSize } from '../utils/useWindowSize';
+
+const InlineLink = styled.a`
+  font-weight: 500;
+  border-bottom: 2px solid;
+  background-color: #f2f2f2;
+
+  &:hover {
+    border-bottom: none;
+    background-color: revert;
+  }
+`;
 
 export default function Zenekarok({ data }) {
   const [zenekar, setZenekar] = useState('');
@@ -55,8 +67,15 @@ export default function Zenekarok({ data }) {
           </div>
           <div>
             <p>
-              Ezért alapítottuk a Gallus &amp; Hirdundo menedzsment irodát,
-              amely extra kezet nyújt az általunk képviselt zenekarok számára.
+              Ezért alapítottuk a{' '}
+              <InlineLink
+                href="https://gallushirundo.hu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Gallus &amp; Hirundo menedzsment irodát
+              </InlineLink>
+              , amely extra kezet nyújt az általunk képviselt zenekarok számára.
               Megosztjuk a tapasztalatainkat, segítjük egymást a zenekar körüli
               tevékenységekben, valamint egy olyan világzenei kollektívát
               alkotunk, amely méltón képviselheti a magyar világzenét a bolygónk
