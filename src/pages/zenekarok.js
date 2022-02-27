@@ -67,7 +67,13 @@ export default function Zenekarok({ data }) {
           </div>
           <div>
             <p>
-              Ezért alapítottuk a{' '}
+              Ezért hívtuk életre a{' '} <InlineLink
+                href="https://puszafalat.eu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Puszafalat
+              </InlineLink> projektet, vagy ezért alapítottuk a{' '}
               <InlineLink
                 href="https://gallushirundo.hu"
                 target="_blank"
