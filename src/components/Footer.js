@@ -109,6 +109,13 @@ export default function Footer() {
           }
         }
       }
+      meBgaLogo: file(relativePath: { eq: "ME_BGA-removebg.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 350) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
     }
   `);
 
@@ -197,6 +204,18 @@ export default function Footer() {
               rel="noreferrer noopener"
             >
               <Img fluid={data.neaLogo.childImageSharp.fluid} alt="NEA logo" />
+            </a>
+          </LogoContainer>
+          <LogoContainer>
+            <a
+              href="https://bgazrt.hu/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Img
+                fluid={data.meBgaLogo.childImageSharp.fluid}
+                alt="Miniszterelnökség és Bethlen Gábor Alapkezelő logo"
+              />
             </a>
           </LogoContainer>
         </AllLogoContainer>
